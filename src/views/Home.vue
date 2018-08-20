@@ -157,13 +157,94 @@
                   </div>
                 </div>
               </div>
-              <div class="slide2"></div>
+              <div class="slide2">
+                <div class="slide2_header">
+                  <div class="slide2_header_text">
+                    <p>컨퍼런스</p>
+                  </div>
+                  <div class="slide2_header_button">
+                    <div class="slide2_header_button_module">
+                      <div class="left_button">
+
+                      </div>
+                      <div class="right_button">
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
         <section class="main_container_right">
           <div class="main_container_right_slide1">
-
+            <div class="main_container_right_slide1_header">
+              <div class="main_container_right_slide1_header_text">
+                <p>최신 뉴스</p>
+              </div>
+              <div class="main_container_right_slide1_header_button"></div>
+            </div>
+            <ul>
+              <li>
+                <div class="li_left">
+                  <img src="../../static/images/asia3.png" alt="">
+                </div>
+                <div class="li_right">
+                  <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
+                  <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
+                </div>
+              </li>
+              <li>
+                <div class="li_left">
+                  <img src="../../static/images/asia3.png" alt="">
+                </div>
+                <div class="li_right">
+                  <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
+                  <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
+                </div>
+              </li>
+              <li>
+                <div class="li_left">
+                  <img src="../../static/images/asia3.png" alt="">
+                </div>
+                <div class="li_right">
+                  <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
+                  <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
+                </div>
+              </li>
+              <li>
+                <div class="li_left">
+                  <img src="../../static/images/asia3.png" alt="">
+                </div>
+                <div class="li_right">
+                  <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
+                  <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
+                </div>
+              </li>
+              <li>
+                <div class="li_left">
+                  <img src="../../static/images/asia3.png" alt="">
+                </div>
+                <div class="li_right">
+                  <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
+                  <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
+                </div>
+              </li>
+              <li>
+                <div class="li_left">
+                  <img src="../../static/images/asia3.png" alt="">
+                </div>
+                <div class="li_right">
+                  <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
+                  <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
+                </div>
+              </li>
+            </ul>
           </div>
           <div class="main_container_right_slide2">
 
@@ -500,7 +581,7 @@
                         font-family:NotoSansCJKkr-Medium;
                         color: #d8d8d8;
                         position: absolute;
-                        bottom: 10px;
+                        bottom: 6px;
                         cursor: pointer;
                         img{
                           margin-right: 2px;
@@ -519,6 +600,51 @@
                 height: 474px;
                 background: antiquewhite;
                 margin-top: 19px;
+                padding: 20px;
+                .slide2_header{
+                  height: 36px;
+                  line-height: 36px;
+                  display: flex;
+                  flex-direction: row;
+                  .slide2_header_text{
+                    background: #3677A8;
+                    width: 95px;
+                    p{
+                      text-align: center;
+                      font-size:14px;
+                      font-family:NotoSansCJKkr-Bold;
+                      color:rgba(255,255,255,1);
+                    }
+                  }
+                  .slide2_header_button{
+                    width: 627px;
+                    height: 36px;
+                    line-height: 36px;
+                    background: white;
+                    border-bottom: 1px solid #ECECEC ;
+                    .slide2_header_button_module{
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: flex-end;
+                      align-items: center;
+                      height: 36px;
+                      .left_button{
+                        width: 14px;
+                        height: 14px;
+                        background: url("../../static/images/left_button.png");
+                        background-size: cover;
+
+                      }
+                      .right_button{
+                        width: 14px;
+                        height: 14px;
+                        background: url("../../static/images/right-btn.png");
+                        background-size: cover;
+                        margin-left: 2px;
+                      }
+                    }
+                  }
+                }
               }
             }
           }
@@ -527,7 +653,76 @@
           width: 300px;
           .main_container_right_slide1{
             height: 769px;
+            padding: 20px;
             background: black;
+            .main_container_right_slide1_header{
+              width: 100%;
+              height: 36px;
+              display: flex;
+              flex-direction: row;
+              .main_container_right_slide1_header_text{
+                width: 120px;
+                height: 36px;
+                line-height: 36px;
+                background: #3677A8;
+                p{
+                  text-align: center;
+                  font-size:13px;
+                  font-family:NotoSansCJKkr-Bold;
+                  color:rgba(255,255,255,1);
+                }
+              }
+              .main_container_right_slide1_header_button{
+                width: 140px;
+                border-bottom: 2px solid #212121;
+              }
+
+            }
+            ul{
+              li{
+                height: 118px;
+                background: #111111;
+                border-bottom: 1px solid rgba(33,33,33,1);
+                display: flex;
+                flex-direction: row;
+                padding-top: 20px;
+                .li_left{
+                  width: 109px;
+                  height: 72px;
+                  img{
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+                .li_right{
+                  width: 151px;
+                  padding-left: 13px;
+                  padding-right: 19px;
+                  position: relative;
+                  h1{
+                    font-size:11px;
+                    font-family:NotoSansCJKkr-Medium;
+                    color:rgba(245,245,245,1);
+                    line-height:18px;
+                  }
+                  p{
+                    font-size: 12px;
+                    color: #d8d8d8;
+                    position: absolute;
+                    bottom: 22px;
+                    span{
+                      img{
+                        margin-right: 2px;
+                      }
+                    }
+                  }
+
+                }
+              }
+              li:last-of-type{
+                border: none;
+              }
+            }
           }
           .main_container_right_slide2{
             height: 381px;
