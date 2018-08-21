@@ -173,9 +173,52 @@
                     </div>
                   </div>
                 </div>
-                <div>
-                  <div></div>
-                  <div></div>
+                <div class="slide2_content">
+                  <div class="slide2_content_left">
+                    <div class="slide2_content_left_top">
+                      <img src="../../static/images/ad1.png" alt="">
+                    </div>
+                    <div class="slide2_content_left_bottom">
+                      <h1>日 SBI 그룹, 새로운 투자로 암호화폐 파생상품
+                        플랫폼 개발 예정</h1>
+                      <h6><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h6>
+                      <p>일본의 금융서비스 대형그룹인 SBI 홀딩스가 새로운 투자로 미국의 장외시장
+                        서비스 제공업체인 클리어마켓(Clear Markets)의 지분을...</p>
+                    </div>
+                  </div>
+                  <div class="slide2_content_right">
+                    <ul>
+                      <li>
+                        <div>
+                          <img src="../../static/images/ad1.png" alt="">
+                        </div>
+                        <p>웨스턴유니온, '암호화폐 안전송금
+                          시스템' 기술특허 출원</p>
+                      </li>
+                      <li>
+                        <div>
+                          <img src="../../static/images/ad1.png" alt="">
+                        </div>
+                        <p>웨스턴유니온, '암호화폐 안전송금
+                          시스템' 기술특허 출원</p>
+                      </li>
+                      <li>
+                        <div>
+                          <img src="../../static/images/ad1.png" alt="">
+                        </div>
+                        <p>웨스턴유니온, '암호화폐 안전송금
+                          시스템' 기술특허 출원</p>
+                      </li>
+                      <li>
+                        <div>
+                          <img src="../../static/images/ad1.png" alt="">
+                        </div>
+                        <p>웨스턴유니온, '암호화폐 안전송금
+                          시스템' 기술특허 출원</p>
+                      </li>
+
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -247,23 +290,545 @@
             </ul>
           </div>
           <div class="main_container_right_slide2">
+            <div class="icon sunny">
+              <div class="sun">
+                <div class="rays"></div>
+              </div>
+            </div>
 
+            <!--<div class="icon rainy">-->
+              <!--<div class="cloud"></div>-->
+              <!--<div class="rain"></div>-->
+            <!--</div>-->
+
+            <!--<div class="icon cloudy">-->
+              <!--<div class="cloud"></div>-->
+              <!--<div class="cloud"></div>-->
+            <!--</div>-->
+
+            <!--<div class="icon flurries">-->
+              <!--<div class="cloud"></div>-->
+              <!--<div class="snow">-->
+                <!--<div class="flake"></div>-->
+                <!--<div class="flake"></div>-->
+              <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="icon thunder-storm">-->
+              <!--<div class="cloud"></div>-->
+              <!--<div class="lightning">-->
+                <!--<div class="bolt"></div>-->
+                <!--<div class="bolt"></div>-->
+              <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="icon sun-shower">-->
+              <!--<div class="cloud"></div>-->
+              <!--<div class="sun">-->
+                <!--<div class="rays"></div>-->
+              <!--</div>-->
+              <!--<div class="rain"></div>-->
+            <!--</div>-->
+            <div class="main_container_right_slide2_header"></div>
           </div>
           <div class="main_container_right_slide3">
-
+            <div class="main_container_right_slide3_header">
+              <div class="main_container_right_slide3_header_text">
+                <p>최신채용 공고</p>
+              </div>
+              <div class="main_container_right_slide3_header_btn"></div>
+            </div>
+            <div class="main_container_right_slide3_container">
+              <ul>
+                <li>
+                  <div class="container_left">
+                    <img src="../../static/images/ad1.png" alt="">
+                  </div>
+                  <div class="container_right">
+                    <h3>최신채용 공고 최신채용 공고</h3>
+                    <p>최신채용 공고</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="container_left">
+                    <img src="../../static/images/ad1.png" alt="">
+                  </div>
+                  <div class="container_right">
+                    <h3>최신채용 공고 최신채용 공고</h3>
+                    <p>최신채용 공고</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="container_left">
+                    <img src="../../static/images/ad1.png" alt="">
+                  </div>
+                  <div class="container_right">
+                    <h3>최신채용 공고 최신채용 공고</h3>
+                    <p>최신채용 공고</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="container_left">
+                    <img src="../../static/images/ad1.png" alt="">
+                  </div>
+                  <div class="container_right">
+                    <h3>최신채용 공고 최신채용 공고</h3>
+                    <p>최신채용 공고</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
       </section>
       <section class="main_container1">
-        <div class="news1"></div>
-        <div class="news2"></div>
+        <div class="news1">
+          <div class="news1_title">
+            <div class="news1_title_text">
+              <p>인사이트</p>
+            </div>
+            <div class="news1_title_btn"></div>
+          </div>
+          <div class="news1_container">
+            <ul>
+              <li>
+                <div class="news1_container_left">
+                  <img src="../../static/images/asia1.png" alt="">
+                </div>
+                <div class="news1_container_right">
+                  <h1>日 SBI 그룹, 새로운 투자로 암호화폐 파생상품 플랫폼 개발</h1>
+                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
+                  <p>일본의 금융서비스 대형그룹인 SBI 홀딩스가 새로운 투자로 미국의 장외시장 전자
+                    파생상품 서비스 제공업체인 클리어마켓(Clear Markets)의 지분을 12% 인수했으
+                    며 추후 20%까지 확장할 예정이라 밝혔다.</p>
+                  <div>
+                    <p>더 읽기</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="news1_container_left">
+                  <img src="../../static/images/asia1.png" alt="">
+                </div>
+                <div class="news1_container_right">
+                  <h1>日 SBI 그룹, 새로운 투자로 암호화폐 파생상품 플랫폼 개발</h1>
+                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
+                  <p>일본의 금융서비스 대형그룹인 SBI 홀딩스가 새로운 투자로 미국의 장외시장 전자
+                    파생상품 서비스 제공업체인 클리어마켓(Clear Markets)의 지분을 12% 인수했으
+                    며 추후 20%까지 확장할 예정이라 밝혔다.</p>
+                  <div>
+                    <p>더 읽기</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="news1_container_left">
+                  <img src="../../static/images/asia1.png" alt="">
+                </div>
+                <div class="news1_container_right">
+                  <h1>日 SBI 그룹, 새로운 투자로 암호화폐 파생상품 플랫폼 개발</h1>
+                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
+                  <p>일본의 금융서비스 대형그룹인 SBI 홀딩스가 새로운 투자로 미국의 장외시장 전자
+                    파생상품 서비스 제공업체인 클리어마켓(Clear Markets)의 지분을 12% 인수했으
+                    며 추후 20%까지 확장할 예정이라 밝혔다.</p>
+                  <div>
+                    <p>더 읽기</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="news1_container_left">
+                  <img src="../../static/images/asia1.png" alt="">
+                </div>
+                <div class="news1_container_right">
+                  <h1>日 SBI 그룹, 새로운 투자로 암호화폐 파생상품 플랫폼 개발</h1>
+                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
+                  <p>일본의 금융서비스 대형그룹인 SBI 홀딩스가 새로운 투자로 미국의 장외시장 전자
+                    파생상품 서비스 제공업체인 클리어마켓(Clear Markets)의 지분을 12% 인수했으
+                    며 추후 20%까지 확장할 예정이라 밝혔다.</p>
+                  <div>
+                    <p>더 읽기</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="news1_container_left">
+                  <img src="../../static/images/asia1.png" alt="">
+                </div>
+                <div class="news1_container_right">
+                  <h1>日 SBI 그룹, 새로운 투자로 암호화폐 파생상품 플랫폼 개발</h1>
+                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
+                  <p>일본의 금융서비스 대형그룹인 SBI 홀딩스가 새로운 투자로 미국의 장외시장 전자
+                    파생상품 서비스 제공업체인 클리어마켓(Clear Markets)의 지분을 12% 인수했으
+                    며 추후 20%까지 확장할 예정이라 밝혔다.</p>
+                  <div>
+                    <p>더 읽기</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="more">
+              <p>더 많은 정보 보기s</p>
+            </div>
+          </div>
+        </div>
+        <div class="news1">
+          <div class="news1_title">
+            <div class="news1_title_text">
+              <p>인사이트</p>
+            </div>
+            <div class="news1_title_btn"></div>
+          </div>
+          <div class="news1_container">
+            <ul>
+              <li>
+                <div class="news1_container_left">
+                  <img src="../../static/images/asia1.png" alt="">
+                </div>
+                <div class="news1_container_right">
+                  <h1>日 SBI 그룹, 새로운 투자로 암호화폐 파생상품 플랫폼 개발</h1>
+                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
+                  <p>일본의 금융서비스 대형그룹인 SBI 홀딩스가 새로운 투자로 미국의 장외시장 전자
+                    파생상품 서비스 제공업체인 클리어마켓(Clear Markets)의 지분을 12% 인수했으
+                    며 추후 20%까지 확장할 예정이라 밝혔다.</p>
+                  <div>
+                    <p>더 읽기</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="news1_container_left">
+                  <img src="../../static/images/asia1.png" alt="">
+                </div>
+                <div class="news1_container_right">
+                  <h1>日 SBI 그룹, 새로운 투자로 암호화폐 파생상품 플랫폼 개발</h1>
+                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
+                  <p>일본의 금융서비스 대형그룹인 SBI 홀딩스가 새로운 투자로 미국의 장외시장 전자
+                    파생상품 서비스 제공업체인 클리어마켓(Clear Markets)의 지분을 12% 인수했으
+                    며 추후 20%까지 확장할 예정이라 밝혔다.</p>
+                  <div>
+                    <p>더 읽기</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="news1_container_left">
+                  <img src="../../static/images/asia1.png" alt="">
+                </div>
+                <div class="news1_container_right">
+                  <h1>日 SBI 그룹, 새로운 투자로 암호화폐 파생상품 플랫폼 개발</h1>
+                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
+                  <p>일본의 금융서비스 대형그룹인 SBI 홀딩스가 새로운 투자로 미국의 장외시장 전자
+                    파생상품 서비스 제공업체인 클리어마켓(Clear Markets)의 지분을 12% 인수했으
+                    며 추후 20%까지 확장할 예정이라 밝혔다.</p>
+                  <div>
+                    <p>더 읽기</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="news1_container_left">
+                  <img src="../../static/images/asia1.png" alt="">
+                </div>
+                <div class="news1_container_right">
+                  <h1>日 SBI 그룹, 새로운 투자로 암호화폐 파생상품 플랫폼 개발</h1>
+                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
+                  <p>일본의 금융서비스 대형그룹인 SBI 홀딩스가 새로운 투자로 미국의 장외시장 전자
+                    파생상품 서비스 제공업체인 클리어마켓(Clear Markets)의 지분을 12% 인수했으
+                    며 추후 20%까지 확장할 예정이라 밝혔다.</p>
+                  <div>
+                    <p>더 읽기</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="news1_container_left">
+                  <img src="../../static/images/asia1.png" alt="">
+                </div>
+                <div class="news1_container_right">
+                  <h1>日 SBI 그룹, 새로운 투자로 암호화폐 파생상품 플랫폼 개발</h1>
+                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
+                  <p>일본의 금융서비스 대형그룹인 SBI 홀딩스가 새로운 투자로 미국의 장외시장 전자
+                    파생상품 서비스 제공업체인 클리어마켓(Clear Markets)의 지분을 12% 인수했으
+                    며 추후 20%까지 확장할 예정이라 밝혔다.</p>
+                  <div>
+                    <p>더 읽기</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="more">
+              <p>더 많은 정보 보기s</p>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="main_container2">
-        <div class="news"></div>
+        <div class="news">
+          <div class="news_title">
+            <p>실시간 핫이슈</p>
+          </div>
+          <div class="news_container">
+            <ul>
+              <li>
+                <div class="li_top">
+                  <img src="../../static/images/ad1.png" alt="">
+                </div>
+                <div class="li_bottom">
+                  <h1>바이낸스, 모바일 월렛 스타트업 ‘트러스트 월렛’ 인수</h1>
+                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
+                  <p>세계 최대 암호화폐 거래소 바이낸스가 인수합병(M&A)에 본격적인 시동
+                    을 걸었다. 바이낸스는 첫 M&A 대상으로 암호화폐 월렛 스타트업 '트러
+                    스트 월렛(Trust Wallet)'을 선택했다.</p>
+                </div>
+              </li>
+              <li>
+                <div class="li_top">
+                  <img src="../../static/images/ad1.png" alt="">
+                </div>
+                <div class="li_bottom">
+                  <h1>바이낸스, 모바일 월렛 스타트업 ‘트러스트 월렛’ 인수</h1>
+                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
+                  <p>세계 최대 암호화폐 거래소 바이낸스가 인수합병(M&A)에 본격적인 시동
+                    을 걸었다. 바이낸스는 첫 M&A 대상으로 암호화폐 월렛 스타트업 '트러
+                    스트 월렛(Trust Wallet)'을 선택했다.</p>
+                </div>
+              </li>
+              <li>
+                <div class="li_top">
+                  <img src="../../static/images/ad1.png" alt="">
+                </div>
+                <div class="li_bottom">
+                  <h1>바이낸스, 모바일 월렛 스타트업 ‘트러스트 월렛’ 인수</h1>
+                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
+                  <p>세계 최대 암호화폐 거래소 바이낸스가 인수합병(M&A)에 본격적인 시동
+                    을 걸었다. 바이낸스는 첫 M&A 대상으로 암호화폐 월렛 스타트업 '트러
+                    스트 월렛(Trust Wallet)'을 선택했다.</p>
+                </div>
+              </li>
+              <li>
+                <div class="li_top">
+                  <img src="../../static/images/ad1.png" alt="">
+                </div>
+                <div class="li_bottom">
+                  <h1>바이낸스, 모바일 월렛 스타트업 ‘트러스트 월렛’ 인수</h1>
+                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
+                  <p>세계 최대 암호화폐 거래소 바이낸스가 인수합병(M&A)에 본격적인 시동
+                    을 걸었다. 바이낸스는 첫 M&A 대상으로 암호화폐 월렛 스타트업 '트러
+                    스트 월렛(Trust Wallet)'을 선택했다.</p>
+                </div>
+              </li>
+              <li>
+                <div class="li_top">
+                  <img src="../../static/images/ad1.png" alt="">
+                </div>
+                <div class="li_bottom">
+                  <h1>바이낸스, 모바일 월렛 스타트업 ‘트러스트 월렛’ 인수</h1>
+                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
+                  <p>세계 최대 암호화폐 거래소 바이낸스가 인수합병(M&A)에 본격적인 시동
+                    을 걸었다. 바이낸스는 첫 M&A 대상으로 암호화폐 월렛 스타트업 '트러
+                    스트 월렛(Trust Wallet)'을 선택했다.</p>
+                </div>
+              </li>
+              <li>
+                <div class="li_top">
+                  <img src="../../static/images/ad1.png" alt="">
+                </div>
+                <div class="li_bottom">
+                  <h1>바이낸스, 모바일 월렛 스타트업 ‘트러스트 월렛’ 인수</h1>
+                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
+                  <p>세계 최대 암호화폐 거래소 바이낸스가 인수합병(M&A)에 본격적인 시동
+                    을 걸었다. 바이낸스는 첫 M&A 대상으로 암호화폐 월렛 스타트업 '트러
+                    스트 월렛(Trust Wallet)'을 선택했다.</p>
+                </div>
+              </li>
+              <li>
+                <div class="li_top">
+                  <img src="../../static/images/ad1.png" alt="">
+                </div>
+                <div class="li_bottom">
+                  <h1>바이낸스, 모바일 월렛 스타트업 ‘트러스트 월렛’ 인수</h1>
+                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
+                  <p>세계 최대 암호화폐 거래소 바이낸스가 인수합병(M&A)에 본격적인 시동
+                    을 걸었다. 바이낸스는 첫 M&A 대상으로 암호화폐 월렛 스타트업 '트러
+                    스트 월렛(Trust Wallet)'을 선택했다.</p>
+                </div>
+              </li>
+              <li>
+                <div class="li_top">
+                  <img src="../../static/images/ad1.png" alt="">
+                </div>
+                <div class="li_bottom">
+                  <h1>바이낸스, 모바일 월렛 스타트업 ‘트러스트 월렛’ 인수</h1>
+                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
+                  <p>세계 최대 암호화폐 거래소 바이낸스가 인수합병(M&A)에 본격적인 시동
+                    을 걸었다. 바이낸스는 첫 M&A 대상으로 암호화폐 월렛 스타트업 '트러
+                    스트 월렛(Trust Wallet)'을 선택했다.</p>
+                </div>
+              </li>
+
+            </ul>
+            <div class="pagination">
+              <el-pagination
+                background
+                layout="prev, pager, next"
+                :total="70"
+                style="background: white"
+              >
+              </el-pagination>
+            </div>
+          </div>
+        </div>
       </section>
     </section>
     <section class="footer_add">
-      <div class="footer_add_container"></div>
+      <div class="footer_add_container">
+        <div class="footer_add_item">
+            <div class="footer_add_title">
+              <p>정책 뉴스</p>
+            </div>
+            <div class="footer_add_content">
+              <ul>
+                <li>
+                  <div class="li_left">
+                    <img src="../../static/images/ad1.png" alt="">
+                  </div>
+                  <div class="li_right">
+                    <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
+                    <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="li_left">
+                    <img src="../../static/images/ad1.png" alt="">
+                  </div>
+                  <div class="li_right">
+                    <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
+                    <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="li_left">
+                    <img src="../../static/images/ad1.png" alt="">
+                  </div>
+                  <div class="li_right">
+                    <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
+                    <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        </div>
+        <div class="footer_add_item">
+          <div class="footer_add_title">
+            <p>정책 뉴스</p>
+          </div>
+          <div class="footer_add_content">
+            <ul>
+              <li>
+                <div class="li_left">
+                  <img src="../../static/images/ad1.png" alt="">
+                </div>
+                <div class="li_right">
+                  <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
+                  <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
+                </div>
+              </li>
+              <li>
+                <div class="li_left">
+                  <img src="../../static/images/ad1.png" alt="">
+                </div>
+                <div class="li_right">
+                  <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
+                  <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
+                </div>
+              </li>
+              <li>
+                <div class="li_left">
+                  <img src="../../static/images/ad1.png" alt="">
+                </div>
+                <div class="li_right">
+                  <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
+                  <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_add_item">
+          <div class="footer_add_title">
+            <p>정책 뉴스</p>
+          </div>
+          <div class="footer_add_content">
+            <ul>
+              <li>
+                <div class="li_left">
+                  <img src="../../static/images/ad1.png" alt="">
+                </div>
+                <div class="li_right">
+                  <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
+                  <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
+                </div>
+              </li>
+              <li>
+                <div class="li_left">
+                  <img src="../../static/images/ad1.png" alt="">
+                </div>
+                <div class="li_right">
+                  <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
+                  <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
+                </div>
+              </li>
+              <li>
+                <div class="li_left">
+                  <img src="../../static/images/ad1.png" alt="">
+                </div>
+                <div class="li_right">
+                  <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
+                  <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_add_item">
+          <div class="footer_add_title">
+            <p>정책 뉴스</p>
+          </div>
+          <div class="footer_add_content">
+            <ul>
+              <li>
+                <div class="li_left">
+                  <img src="../../static/images/ad1.png" alt="">
+                </div>
+                <div class="li_right">
+                  <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
+                  <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
+                </div>
+              </li>
+              <li>
+                <div class="li_left">
+                  <img src="../../static/images/ad1.png" alt="">
+                </div>
+                <div class="li_right">
+                  <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
+                  <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
+                </div>
+              </li>
+              <li>
+                <div class="li_left">
+                  <img src="../../static/images/ad1.png" alt="">
+                </div>
+                <div class="li_right">
+                  <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
+                  <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
     </section>
   </main>
 </template>
@@ -294,8 +859,7 @@
               flex-direction: row;
               justify-content: space-between;
               .banner1:hover .banner1_content{
-                background: rgba(0,0,0,.4);
-                transition: all .6s;
+                background: linear-gradient(bottom,rgba(0,0,0,.7),rgba(255,255,255,0));
               }
               .banner1:hover img{
                 transform: scale(1.1);
@@ -306,9 +870,11 @@
                 cursor: pointer;
                 overflow: hidden;
                 position: relative;
+                transition: all .6s;
                 .banner1_content{
                   position: absolute;
                   bottom: 0;
+                  transition: all .6s;
                   div{
                     width: 40px;
                     height: 16px;
@@ -352,7 +918,7 @@
               justify-content: space-between;
               margin-top: 4px;
               .banner2:hover .banner1_content{
-                background: rgba(0,0,0,.4);
+                background: linear-gradient(bottom,rgba(0,0,0,.7),rgba(255,255,255,0));
                 transition: all .6s;
               }
               .banner2:hover img{
@@ -401,7 +967,7 @@
                   }
                 }
                 .banner1:hover .banner1_content{
-                  background: rgba(0,0,0,.4);
+                  background: linear-gradient(bottom,rgba(0,0,0,.7),rgba(255,255,255,0));
                 }
                 img{
                   height: 100%;
@@ -532,12 +1098,11 @@
                       transform: scale(1.1);
                     }
                     .slide1_content_left_top:hover div{
-                      background: rgba(0,0,0,.4);
+                      background: linear-gradient(bottom,rgba(0,0,0,.7),rgba(255,255,255,0));
                     }
                   }
                   .slide1_content_right{
                     width: 357px;
-                    background: sienna;
                   }
 
                 }
@@ -598,9 +1163,9 @@
               }
               .slide2{
                 height: 474px;
-                background: antiquewhite;
                 margin-top: 19px;
                 padding: 20px;
+                background: white;
                 .slide2_header{
                   height: 36px;
                   line-height: 36px;
@@ -641,6 +1206,80 @@
                         background: url("../../static/images/right-btn.png");
                         background-size: cover;
                         margin-left: 2px;
+                      }
+                    }
+                  }
+                }
+                .slide2_content{
+                  padding-top: 20px;
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between;
+                  .slide2_content_left{
+                    width: 350px;
+                    .slide2_content_left_top{
+                      height: 234px;
+                      img{
+                        width: 100%;
+                        height: 100%;
+                        cursor: pointer;
+                      }
+                    }
+                    .slide2_content_left_bottom{
+                      padding-top: 14px;
+                      h1{
+                        font-size:17px;
+                        font-family:NotoSansCJKkr-Bold;
+                        color:rgba(6,6,6,1);
+                        line-height:24px;
+                        cursor: pointer;
+                      }
+                      h6{
+                        font-size: 12px;
+                        color: #d8d8d8;
+                        margin-top: 6px;
+                        span{
+                          img{
+                            margin-right: 2px;
+                          }
+                        }
+                      }
+                      p{
+                        font-size:12px;
+                        font-family:NotoSansCJKkr-DemiLight;
+                        color:rgba(96,96,96,1);
+                        line-height:21px;
+                        margin-top: 15px;
+                        cursor: pointer;
+                      }
+                    }
+                  }
+                  .slide2_content_right{
+                    width: 350px;
+                    ul{
+                      display: flex;
+                      flex-direction: row;
+                      flex-wrap: wrap;
+                      justify-content: space-between;
+                      li{
+                        width: 165px;
+                        height: 199px;
+                        cursor: pointer;
+                        div{
+                          width: 165px;
+                          height: 110px;
+                          img{
+                            width: 100%;
+                            height: 100%;
+                          }
+                        }
+                        p{
+                          font-size:12px;
+                          font-family:NotoSansCJKkr-Medium;
+                          color:rgba(6,6,6,1);
+                          line-height:17px;
+                          padding-top: 17px;
+                        }
                       }
                     }
                   }
@@ -728,12 +1367,85 @@
             height: 381px;
             background: black;
             margin-top: 24px;
+            position: relative;
           }
           .main_container_right_slide3{
             height: 287px;
-            background: black;
+            background: white;
             margin-top: 49px;
+            padding: 18px;
+            .main_container_right_slide3_header{
+              height: 36px;
+              display: flex;
+              flex-direction: row;
+              .main_container_right_slide3_header_text{
+                width:120px;
+                height:36px;
+                line-height: 36px;
+                background:rgba(54,119,168,1);
+                p{
+                  font-size:13px;
+                  font-family:NotoSansCJKkr-Bold;
+                  color:rgba(255,255,255,1);
+                  text-align: center;
+                }
+              }
+              .main_container_right_slide3_header_btn{
+                width: 144px;
+                border-bottom: 2px solid rgba(229,229,229,1);
+              }
+            }
+            .main_container_right_slide3_container{
+              ul{
+                display: flex;
+                flex-direction: column;
+                li{
+                  display: flex;
+                  flex-direction: row;
+                  height: 57px;
+                  border-bottom: 1px solid rgba(229,229,229,1);
+                  /*padding-bottom: 5px;*/
+                  .container_left{
+                    width: 54px;
+                    height: 57px;
+                    /*padding: 12px 8px 12px 8px;*/
+                    img{
+                      width: 38px;
+                      height: 38px;
+                      align-items: center;
+                      margin-top: 10px;
+                    }
 
+                  }
+                  .container_right{
+                    display: flex;
+                    flex-direction: column;
+                    width: 210px;
+                    padding-top: 14px;
+                    height: 57px;
+                    h3{
+                        font-size:11px;
+                        font-family:NotoSansCJKkr-Medium;
+                        color:rgba(0,0,0,1);
+                        line-height:16px;
+                        font-weight: 500;
+                        cursor: pointer;
+                    }
+                    p{
+                      font-size:11px;
+                      font-family:NotoSansCJKkr-Medium;
+                      color:rgba(0,0,0,.5);
+                      line-height:16px;
+                      font-weight: 500;
+                      cursor: pointer;
+                    }
+                  }
+                }
+                li:last-of-type{
+                  border-bottom: none;
+                }
+              }
+            }
           }
         }
       }
@@ -745,19 +1457,199 @@
         .news1{
           width: 690px;
           height: 1085px;
-          background: sienna;
+          background: white;
+          padding: 21px;
+          position: relative;
+          .news1_title{
+            height: 36px;
+            display: flex;
+            flex-direction: row;
+            .news1_title_text{
+              width:95px;
+              height:36px;
+              background:rgba(54,119,168,1);
+              p{
+                text-align: center;
+                line-height: 36px;
+                font-size:13px;
+                font-family:NotoSansCJKkr-Bold;
+                color:rgba(255,255,255,1);
+              }
+            }
+            .news1_title_btn{
+              width: 552px;
+              border-bottom: 2px solid rgba(236,236,236,1);
+            }
+
+          }
+          .news1_container{
+            ul{
+              padding-top: 20px;
+              li:first-of-type{
+                margin: 0;
+              }
+              li{
+                display: flex;
+                flex-direction: row;
+                margin-top: 31px;
+                .news1_container_left{
+                  width: 242px;
+                  height: 162px;
+                  img{
+                    width: 100%;
+                    height: 100%;
+                    cursor: pointer;
+                  }
+                }
+                .news1_container_right{
+                  width: 391px;
+                  padding-left: 21px;
+                  position: relative;
+                  div{
+                    width:94px;
+                    height:32px;
+                    background:rgba(0,0,0,1);
+                    line-height: 32px;
+                    position: absolute;
+                    bottom: 0;
+                    cursor: pointer;
+                    p{
+                      font-size:12px;
+                      font-family:NotoSansCJKkr-Bold;
+                      color:rgba(255,255,255,1);
+                      text-align: center;
+                      cursor: pointer;
+                    }
+                  }
+                  h1{
+                    font-size:15px;
+                    font-family:NotoSansCJKkr-Medium;
+                    color:rgba(0,0,0,1);
+                    cursor: pointer;
+                  }
+                  h3{
+                      font-size:11px;
+                      font-family:NotoSansCJKkr-Medium;
+                      color:#ccc;
+                      line-height:18px;
+                      margin: 10px 0;
+                    p {
+                      font-size: 12px;
+                      color: #d8d8d8;
+                      position: absolute;
+                      bottom: 22px;
+
+                      span{
+                        margin-right: 3px;
+                      }
+                    }
+                    img {
+                      margin-right: 3px;
+                    }
+                  }
+                  p{
+                    font-size:12px;
+                    font-family:NotoSansCJKkr-DemiLight;
+                    color:rgba(96,96,96,1);
+                    height: 56px;
+                    cursor: pointer;
+                  }
+                }
+              }
+            }
+            .more{
+              width:330px;
+              height:32px;
+              background:rgba(0,0,0,1);
+              position: absolute;
+              bottom: 20px;
+              left: 180px;
+              cursor: pointer;
+              p{
+                font-size:12px;
+                line-height: 32px;
+                font-family:NotoSansCJKkr-Bold;
+                color:rgba(255,255,255,1);
+                text-align: center;
+              }
+            }
+          }
         }
         .news2{
           width: 690px;
           height: 1085px;
-          background: sienna;
         }
       }
       .main_container2{
         .news{
-          height: 860px;
-          background: brown;
+          height: 890px;
           margin-top: 23px;
+          padding: 0 21px;
+          background: white;
+          .news_title{
+            border-bottom: 2px solid rgba(236,236,236,1);
+            p{
+              height: 45px;
+              line-height: 45px;
+              font-size:17px;
+              font-family:NotoSansCJKkr-Bold;
+              color:rgba(0,0,0,1);
+              text-align: center;
+            }
+          }
+          .news_container{
+            margin-top: 20px;
+            ul{
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              li{
+                width: 325px;
+                height: 386px;
+                background: white;
+                .li_top{
+                  width: 325px;
+                  height: 216px;
+                  img{
+                    cursor: pointer;
+                    height: 100%;
+                    width: 100%;
+                  }
+                }
+                .li_bottom{
+                  h1{
+                    font-size:14px;
+                    font-family:NotoSansCJKkr-Bold;
+                    color:rgba(12,24,35,1);
+                    line-height:23px;
+                    margin-top: 15px;
+                  }
+                  h3{
+                    font-size: 12px;
+                    color: #d8d8d8;
+                    margin: 10px 0;
+                    span{
+                      img{
+                        margin-right: 2px;
+                      }
+                    }
+                  }
+                  p{
+                    height: 57px;
+                    font-size:12px;
+                    font-family:NotoSansCJKkr-DemiLight;
+                    color:rgba(96,96,96,1);
+                    line-height:21px;
+                  }
+                }
+              }
+            }
+          }
+          .pagination{
+            display: flex;
+            justify-content: center;
+          }
         }
       }
     }
@@ -765,13 +1657,475 @@
       margin-top: 60px;
       height: 456px;
       background: black;
+      padding-top: 48px;
       .footer_add_container{
         width: 1400px;
         height: 100%;
         margin: 0 auto;
-        background: coral;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .footer_add_item{
+          width: 320px;
+            .footer_add_title{
+              height: 35px;
+              line-height: 35px;
+              p{
+                font-size:12px;
+                font-family:NotoSansCJKkr-Bold;
+                color:rgba(255,255,255,1);
+                border-bottom: 2px solid #313131;
+              }
+            }
+            .footer_add_content{
+              ul{
+                li:last-of-type{
+                  border-bottom: none;
+                }
+                li{
+                  height: 113px;
+                  display: flex;
+                  flex-direction: row;
+                  padding-top: 20px;
+                  border-bottom: 1px solid #212121;
+                  .li_left{
+                    width: 109px;
+                    height: 72px;
+                    img{
+                      width: 100%;
+                      height: 100%;
+                    }
+                  }
+                  .li_right{
+                    width: 216px;
+                    padding-left: 10px;
+                    h1{
+                      font-size:11px;
+                      font-family:NotoSansCJKkr-Medium;
+                      color:rgba(245,245,245,1);
+                      line-height:18px;
+                    }
+                    p{
+                      font-size: 12px;
+                      color: #d8d8d8;
+                      /*position: absolute;*/
+                      /*bottom: 22px;*/
+                      height: 34px;
+                      margin-top: 10px;
+                      span{
+                        img{
+                          margin-right: 2px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
+  /* Icons */
+
+  .icon {
+    /* position: relative; */
+    /* display: inline-block; */
+    font-size: 1em; /* control icon size here */
+  }
+
+  .sunny {
+    position: absolute;
+    top: 50%;
+    left: 46%;
+  }
+
+  .rainy {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+  }
+
+  .cloudy {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+  }
+
+  .flurries {
+    position: absolute;
+    top: 50%;
+    left: 68%;
+  }
+
+  .thunder-storm {
+    position: absolute;
+    top: 50%;
+    left: 78%;
+  }
+
+  .sun-shower {
+    position: absolute;
+    top: 50%;
+    left: 88%;
+  }
+
+  .sun {
+    width: 2.5em;
+    height: 2.5em;
+    margin: -1.25em;
+    background: currentColor;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0.375em orange;
+    -webkit-animation: spin 12s infinite linear;
+    animation: spin 12s infinite linear;
+  }
+
+  .cloud + .sun {
+    margin: -2em 1em;
+  }
+
+  .rays {
+    position: absolute;
+    top: -2em;
+    left: 50%;
+    display: block;
+    width: 0.375em;
+    height: 1.125em;
+    margin-left: -0.1875em;
+    background: yellow;
+    border-radius: 0.25em;
+    box-shadow: 0 5.375em yellow;
+  }
+
+  .rays:before, .rays:after {
+    content: '';
+    position: absolute;
+    top: 0em;
+    left: 0em;
+    display: block;
+    width: 0.375em;
+    height: 1.125em;
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg);
+    -webkit-transform-origin: 50% 3.25em;
+    transform-origin: 50% 3.25em;
+    background: yellow;
+    border-radius: 0.25em;
+    box-shadow: 0 5.375em yellow;
+  }
+  .rays:before {
+    -webkit-transform: rotate(120deg);
+    transform: rotate(120deg);
+  }
+
+  .rain,
+  .lightning,
+  .snow {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 20%;
+    width: 3.75em;
+    height: 3.75em;
+    margin: 0.375em 0 0 -2em;
+    background: currentColor;
+  }
+
+  .rain:after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    width: 1.125em;
+    height: 1.125em;
+    margin: -1em 0 0 -0.25em;
+    background: #0cf;
+    border-radius: 100% 0 60% 50% / 60% 0 100% 50%;
+    box-shadow:
+      0.625em 0.875em 0 -0.125em rgba(255,255,255,0.2),
+      -0.875em 1.125em 0 -0.125em rgba(255,255,255,0.2),
+        -1.375em -0.125em 0 rgba(255,255,255,0.2);
+    -webkit-transform: rotate(-28deg);
+    transform: rotate(-28deg);
+    -webkit-animation: rain 3s linear infinite;
+    animation: rain 3s linear infinite;
+  }
+
+  .cloud {
+    position: absolute;
+    z-index: 1;
+    width: 3.6875em;
+    height: 3.6875em;
+    margin: -1.84375em;
+    background: currentColor;
+    border-radius: 50%;
+    box-shadow:
+      -2.1875em 0.6875em 0 -0.6875em,
+      2.0625em 0.9375em 0 -0.9375em ,
+      0 0 0 0.375em lightgray,
+      -2.1875em 0.6875em 0 -0.3125em lightgray,
+      2.0625em 0.9375em 0 -0.5625em lightgray;
+  }
+  .cloud:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -0.5em;
+    display: block;
+    width: 4.5625em;
+    height: 1em;
+    background: currentColor;
+    box-shadow: 0 0.4375em 0 -0.0625em lightgray;
+  }
+  .cloud:nth-child(2) {
+    z-index: 0;
+    background: #fff;
+    box-shadow:
+      -2.1875em 0.6875em 0 -0.6875em #fff,
+      2.0625em 0.9375em 0 -0.9375em #fff,
+      0 0 0 0.375em #fff,
+      -2.1875em 0.6875em 0 -0.3125em #fff,
+      2.0625em 0.9375em 0 -0.5625em #fff;
+    opacity: 0.3;
+    -webkit-transform: scale(0.5) translate(6em, -3em);
+    transform: scale(0.5) translate(6em, -3em);
+    -webkit-animation: cloud 4s linear infinite;
+    animation: cloud 4s linear infinite;
+  }
+  .cloud:nth-child(2):after { background: #fff; }
+
+  .flake:before,
+  .flake:after {
+    content: '\2745';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -1.025em 0 0 -1.0125em;
+    color: #fff;
+    list-height: 1em;
+    opacity: 0.2;
+    -webkit-animation: spin 8s linear infinite reverse;
+    animation: spin 8s linear infinite reverse;
+  }
+  .flake:after {
+    margin: 0.125em 0 0 -1em;
+    font-size: 1.5em;
+    opacity: 0.4;
+    -webkit-animation: spin 14s linear infinite;
+    animation: spin 14s linear infinite;
+  }
+  .flake:nth-child(2):before {
+    margin: -0.5em 0 0 0.25em;
+    font-size: 1.25em;
+    opacity: 0.2;
+    -webkit-animation: spin 10s linear infinite;
+    animation: spin 10s linear infinite;
+  }
+  .flake:nth-child(2):after {
+    margin: 0.375em 0 0 0.125em;
+    font-size: 2em;
+    opacity: 0.4;
+    -webkit-animation: spin 16s linear infinite reverse;
+    animation: spin 16s linear infinite reverse;
+  }
+
+  .bolt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -0.25em 0 0 -0.125em;
+    color: #fff;
+    opacity: 0.3;
+    -webkit-animation: lightning 2s linear infinite;
+    animation: lightning 2s linear infinite;
+  }
+  .bolt:nth-child(2) {
+    width: 0.5em;
+    height: 0.25em;
+    margin: -1.75em 0 0 -1.875em;
+    -webkit-transform: translate(2.5em, 2.25em);
+    transform: translate(2.5em, 2.25em);
+    opacity: 0.2;
+    -webkit-animation: lightning 1.5s linear infinite;
+    animation: lightning 1.5s linear infinite;
+  }
+
+  .bolt:before,
+  .bolt:after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    margin: -1.625em 0 0 -1.0125em;
+    border-top: 1.25em solid transparent;
+    border-right: 0.75em solid;
+    border-bottom: 0.75em solid;
+    border-left: 0.5em solid transparent;
+    -webkit-transform: skewX(-10deg);
+    transform: skewX(-10deg);
+  }
+  .bolt:after {
+    margin: -0.25em 0 0 -0.25em;
+    border-top: 0.75em solid;
+    border-right: 0.5em solid transparent;
+    border-bottom: 1.25em solid transparent;
+    border-left: 0.75em solid;
+    -webkit-transform: skewX(-10deg);
+    transform: skewX(-10deg);
+  }
+  .bolt:nth-child(2):before {
+    margin: -0.75em 0 0 -0.5em;
+    border-top: 0.625em solid transparent;
+    border-right: 0.375em solid;
+    border-bottom: 0.375em solid;
+    border-left: 0.25em solid transparent;
+  }
+  .bolt:nth-child(2):after {
+    margin: -0.125em 0 0 -0.125em;
+    border-top: 0.375em solid;
+    border-right: 0.25em solid transparent;
+    border-bottom: 0.625em solid transparent;
+    border-left: 0.375em solid;
+  }
+
+  /* Keyframe animations */
+
+  @-webkit-keyframes spin {
+    0%  {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}
+  }
+
+  @keyframes spin {
+    100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+  }
+
+  @-webkit-keyframes rain {
+    0% {
+      background: #0cf;
+      box-shadow:
+        0.625em 0.875em 0 -0.125em rgba(255,255,255,0.2),
+        -0.875em 1.125em 0 -0.125em rgba(255,255,255,0.2),
+          -1.375em -0.125em 0 #0cf;
+    }
+    25% {
+      box-shadow:
+        0.625em 0.875em 0 -0.125em rgba(255,255,255,0.2),
+        -0.875em 1.125em 0 -0.125em #0cf,
+          -1.375em -0.125em 0 rgba(255,255,255,0.2);
+    }
+    50% {
+      background: rgba(255,255,255,0.3);
+      box-shadow:
+        0.625em 0.875em 0 -0.125em #0cf,
+        -0.875em 1.125em 0 -0.125em rgba(255,255,255,0.2),
+          -1.375em -0.125em 0 rgba(255,255,255,0.2);
+    }
+    100% {
+      box-shadow:
+        0.625em 0.875em 0 -0.125em rgba(255,255,255,0.2),
+        -0.875em 1.125em 0 -0.125em rgba(255,255,255,0.2),
+          -1.375em -0.125em 0 #0cf;
+    }
+  }
+
+  @keyframes rain {
+    0% {
+      background: #0cf;
+      box-shadow:
+        0.625em 0.875em 0 -0.125em rgba(255,255,255,0.2),
+        -0.875em 1.125em 0 -0.125em rgba(255,255,255,0.2),
+          -1.375em -0.125em 0 #0cf;
+    }
+    25% {
+      box-shadow:
+        0.625em 0.875em 0 -0.125em rgba(255,255,255,0.2),
+        -0.875em 1.125em 0 -0.125em #0cf,
+          -1.375em -0.125em 0 rgba(255,255,255,0.2);
+    }
+    50% {
+      background: rgba(255,255,255,0.3);
+      box-shadow:
+        0.625em 0.875em 0 -0.125em #0cf,
+        -0.875em 1.125em 0 -0.125em rgba(255,255,255,0.2),
+          -1.375em -0.125em 0 rgba(255,255,255,0.2);
+    }
+    100% {
+      box-shadow:
+        0.625em 0.875em 0 -0.125em rgba(255,255,255,0.2),
+        -0.875em 1.125em 0 -0.125em rgba(255,255,255,0.2),
+          -1.375em -0.125em 0 #0cf;
+    }
+  }
+
+  @-webkit-keyframes cloud {
+    0% { opacity: 0; }
+    50% { opacity: 0.3; }
+    100% {
+      opacity: 0;
+      -webkit-transform: scale(0.5) translate(-200%, -3em);
+      transform: scale(0.5) translate(-200%, -3em);
+    }
+  }
+
+  @keyframes cloud {
+    0% { opacity: 0; }
+    50% { opacity: 0.3; }
+    100% {
+      opacity: 0;
+      -webkit-transform: scale(0.5) translate(-200%, -3em);
+      transform: scale(0.5) translate(-200%, -3em);
+    }
+  }
+
+  @-webkit-keyframes lightning {
+    45% {
+      color: #fff;
+      background: #fff;
+      opacity: 0.2;
+    }
+    50% {
+      color: #0cf;
+      background: #0cf;
+      opacity: 1;
+    }
+    55% {
+      color: #fff;
+      background: #fff;
+      opacity: 0.2;
+    }
+  }
+
+  @keyframes lightning {
+    45% {
+      color: #fff;
+      background: #fff;
+      opacity: 0.2;
+    }
+    50% {
+      color: #0cf;
+      background: #0cf;
+      opacity: 1;
+    }
+    55% {
+      color: #fff;
+      background: #fff;
+      opacity: 0.2;
+    }
+  }
+  .el-pagination.is-background .btn-next, .el-pagination.is-background .btn-prev, .el-pagination.is-background .el-pager li {
+    margin: 0 5px;
+    background-color: white!important;
+    color: #606266;
+    min-width: 30px;
+    border-radius: 2px;
+    border: 1px solid #d5d5d5!important;
+  }
+  .el-pagination.is-background .el-pager li:not(.disabled).active {
+    background-color: #409EFF!important;
+    color: #fff;
   }
 
 </style>

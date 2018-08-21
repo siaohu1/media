@@ -505,7 +505,22 @@
           <div class="header_center_logo"></div>
         </div>
       </div>
-      <div class="header_bottom"></div>
+      <div class="header_bottom">
+        <div class="header_bottom_container">
+          <ul>
+            <li>뉴스</li>
+            <li>인사이트</li>
+            <li>컨퍼런스</li>
+            <li>이벤트</li>
+            <li>시세</li>
+            <li>동영상</li>
+            <li>고급정보</li>
+            <li>블록체인101</li>
+            <li>체인잡</li>
+            <li> </li>
+          </ul>
+        </div>
+      </div>
     </section>
   </header>
 </template>
@@ -689,6 +704,32 @@
     .header_bottom {
       height: 30px;
       background: #3677A8;
+      .header_bottom_container{
+        width: 1400px;
+        margin: 0 auto;
+        ul{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          li{
+            line-height: 30px;
+            margin-left: 50px;
+            /*border-top: 3px solid white;*/
+            font-size:14px;
+            font-family:NotoSansCJKkr-Bold;
+            color:rgba(255,255,255,1);
+            cursor: pointer;
+          }
+          li:first-of-type{
+            margin: 0;
+          }
+          li:last-of-type{
+            background: url("../../static/images/search.png") no-repeat center;
+          width: 16px;
+            height: 30px;
+          }
+        }
+      }
     }
   }
 
