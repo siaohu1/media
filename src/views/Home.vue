@@ -1,173 +1,145 @@
 <template>
   <main>
     <section class="main">
-      <section class="main_container">
+      <section class="main_container" style="position: relative">
         <section class="main_container_left">
           <div class="main_container_left_section1">
             <div class="main_container_left_section1_top">
-              <div class="banner1">
-                <img src="../../static/images/asia1.png" alt="">
-                <div class="banner1_content">
-                  <div>
-                    <h5>해외</h5>
+              <div class="banner1" v-for="item in typeList1">
+                <div class="animated fadeIn" style="height: 100%">
+                  <router-link :to="`/StimulationDetail?id=${item.categoryId}&&id1=${item.id}`" target='_blank'>
+                    <img v-lazy="item.cover" alt="">
+                  </router-link>
+                  <div class="banner1_content">
+                    <div>
+                      <router-link :to="`/StimulationDetail?id=${item.categoryId}&&id1=${item.id}`" target='_blank'>
+                        <h5>{{item.tags}}</h5>
+                      </router-link>
+                    </div>
+                    <router-link :to="`/StimulationDetail?id=${item.categoryId}&&id1=${item.id}`" target='_blank'>
+                      <p>{{item.title}}</p>
+                      <h6>{{item.publishTime}}</h6>
+                    </router-link>
                   </div>
-                  <p>‘유토피아’는 이제 그만…‘리얼 비즈니스’ 찾는 블록체인
-                    엑셀러레이터</p>
-                  <h6>2018-07-31 23:29:47</h6>
                 </div>
               </div>
-              <div class="banner1">
-                <img src="../../static/images/asia2.png" alt="">
-                <div class="banner1_content">
-                  <div>
-                    <h5>해외</h5>
-                  </div>
-                  <p>‘유토피아’는 이제 그만…‘리얼 비즈니스’ 찾는 블록체인
-                    엑셀러레이터</p>
-                  <h6>2018-07-31 23:29:47</h6>
-                </div>
-              </div>
-              <div class="banner1">
-                <img src="../../static/images/asia3.png" alt="">
-                <div class="banner1_content">
-                  <div>
-                    <h5>해외</h5>
-                  </div>
-                  <p>‘유토피아’는 이제 그만…‘리얼 비즈니스’ 찾는 블록체인
-                    엑셀러레이터</p>
-                  <h6>2018-07-31 23:29:47</h6>
-                </div>
-              </div>
+
             </div>
             <div class="main_container_left_section1_bottom">
-              <div class="banner2">
-                <img src="../../static/images/asia4.png" alt="">
+              <div class="banner2 animated fadeIn" v-for="item in typeList2" >
+                <router-link :to="`/StimulationDetail?id=${item.categoryId}&&id1=${item.id}`" target='_blank'>
+                  <img v-lazy="item.cover" alt="">
+                </router-link>
                 <div class="banner1_content">
                   <div>
-                    <h5>해외</h5>
+                    <router-link :to="`/StimulationDetail?id=${item.categoryId}&&id1=${item.id}`" target='_blank' style="text-decoration: none">
+                      <h5>{{item.tags}}</h5>
+                    </router-link>
                   </div>
-                  <p>조세회피처에서 암호화폐 거점으로...소국들의 親암호화폐 정책</p>
-                  <h6>2018-07-31 23:29:47</h6>
+                  <router-link :to="`/StimulationDetail?id=${item.categoryId}&&id1=${item.id}`" target='_blank' style="text-decoration: none">
+                    <p>{{item.title}}</p>
+                    <h6>{{item.publishTime}}</h6>
+                  </router-link>
                 </div>
               </div>
-              <div class="banner2">
-                <img src="../../static/images/asia5.png" alt="">
-                <div class="banner1_content">
-                  <div>
-                    <h5>해외</h5>
-                  </div>
-                  <p>‘유토피아’는 이제 그만…‘리얼 비즈니스’ 찾는 블록체인
-                    엑셀러레이터</p>
-                  <h6>2018-07-31 23:29:47</h6>
-                </div>
-              </div>
+              <!--<div class="banner2" v-if="loading_top" >-->
+                <!--<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1537095832513&di=dac2170a001ccbcd1e758073ae70011a&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01491557e1e0f00000012e7e66d689.gif" alt="">-->
+              <!--</div>-->
+              <!--<div class="banner2" v-if="loading_top">-->
+                <!--<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1537095832513&di=dac2170a001ccbcd1e758073ae70011a&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01491557e1e0f00000012e7e66d689.gif" alt="">-->
+              <!--</div>-->
             </div>
           </div>
           <div class="main_container_left_section2">
             <div class="main_container_left_section2_left">
-              <div class="ad1">
-                <img src="../../static/images/ad1.png" alt="">
+              <div class="ad1 black" >
+                <a :href="ad1.url">
+                  <img v-lazy="ad1.cover" alt="">
+                  <div style="width: 100%;height:100%;position: absolute;top: 0;transition: all .6s;" class="animated fade"></div>
+                </a>
               </div>
-              <div class="ad2">
-                <img src="../../static/images/ad2.png" alt="">
+              <div class="ad2 black">
+                <a :href="ad2.url">
+                  <img v-lazy="ad2.cover" alt="">
+                  <div style="width: 100%;height:100%;position: absolute;top: 0;transition: all .6s;" class="animated fade"></div>
+                </a>
 
               </div>
-              <div class="ad3">
-                <img src="../../static/images/ad3.png" alt="">
+              <div class="ad3 black">
+                <a :href="ad3.url">
+                  <img v-lazy="ad3.cover" alt="">
+                  <div style="width: 100%;height:100%;position: absolute;top: 0;transition: all .6s;" class="animated fade"></div>
+                </a>
 
               </div>
-              <div class="ad4">
-                <img src="../../static/images/ad4.png" alt="">
 
-              </div>
             </div>
             <div class="main_container_left_section2_right">
               <div class="slide1">
                 <div class="slide1_top_nav">
                   <div class="slide1_top_nav_left">
-                    <p>분류별 뉴스</p>
+                    <p>{{$t('m.classification')}}</p>
                   </div>
                   <div class="slide1_top_nav_right">
                     <ul>
-                      <li><a href="javascript:;">정책</a></li>
-                      <li><a href="javascript:;">연구</a></li>
-                      <li><a href="javascript:;">테크</a></li>
-                      <li><a href="javascript:;">해외</a></li>
-                      <li><a href="javascript:;">시세</a></li>
-                      <li><a href="javascript:;">인물</a></li>
+                      <li><a href="javascript:;" :class="{active1:n==1}" @click="n=1,getNew1()">{{$t('m.policy')}}</a></li>
+                      <li><a href="javascript:;" :class="{active1:n==2}" @click="n=2,getNew2()">{{$t('m.research')}}</a></li>
+                      <li><a href="javascript:;" :class="{active1:n==3}" @click="n=3,getNew4()">{{$t('m.technology')}}</a></li>
+                      <li><a href="javascript:;" :class="{active1:n==4}" @click="n=4,getNew5()">{{$t('m.overseas')}}</a></li>
+                      <li><a href="javascript:;" :class="{active1:n==5}" @click="n=5,getNew6()">{{$t('m.Quotation')}}</a></li>
+                      <li><a href="javascript:;" :class="{active1:n==6}" @click="n=6,getNew3()">{{$t('m.character')}}</a></li>
                     </ul>
                   </div>
                 </div>
-                <div class="slide1_content">
-                  <div class="slide1_content_left">
-                    <div class="slide1_content_left_top">
-                      <img src="../../static/images/baigong.png" alt="">
-                      <div class="slide1_content_left_top_text">
-                        <h6>2018-07-31 23:29:47</h6>
-                        <p>마스터카드, '암호화폐 거래 속도 개선' 기술특허 취득</p>
+                <div v-loading="loading2"
+                     element-loading-text="loading"
+                     element-loading-spinner="el-icon-loading"
+                     element-loading-background="rgba(0, 0, 0, 0.4)" style="height: 420px" v-if="refreshM">
+                  <div class="slide1_content" >
+                    <div class="slide1_content_left animated fadeIn" v-for="(item,index) in news1" :class="'delay-1-'+index+'s'">
+                      <div class="slide1_content_left_top">
+                        <router-link :to="`/StimulationDetail?id=${item.categoryId}&&id1=${item.id}`" target='_blank' style="text-decoration: none">
+                          <img v-lazy="item.cover" alt="">
+                        </router-link>
+                        <div class="slide1_content_left_top_text">
+                          <router-link :to="`/StimulationDetail?id=${item.categoryId}&&id1=${item.id}`" target='_blank' style="text-decoration: none">
+                            <h6>{{item.publishTime}}</h6>
+                            <p>{{item.title}}</p>
+                          </router-link>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="slide1_content_left">
-                    <div class="slide1_content_left_top">
-                      <img src="../../static/images/huaerjie.png" alt="">
-                      <div class="slide1_content_left_top_text">
-                        <h6>2018-07-31 23:29:47</h6>
-                        <p>마스터카드, '암호화폐 거래 속도 개선' 기술특허 취득</p>
+                  <div class="slide1_content_left_bottom">
+                    <div class="slide1_content_left_bottom_container" v-for="item in news2">
+                      <div class="slide1_content_left_bottom_container_img">
+                        <router-link :to="`/StimulationDetail?id=${item.categoryId}&&id1=${item.id}`" target='_blank' style="text-decoration: none">
+                          <img v-lazy="item.cover" alt="">
+                        </router-link>
+                      </div>
+                      <div class="slide1_content_left_bottom_container_content">
+                        <router-link :to="`/StimulationDetail?id=${item.categoryId}&&id1=${item.id}`" target='_blank' style="text-decoration: none">
+                          <h1>{{item.title}}</h1>
+                          <p><span><img src="../../static/images/timea.png" alt=""></span>{{item.publishTime.split(' ')[0]}}</p>
+                        </router-link>
                       </div>
                     </div>
+
                   </div>
                 </div>
-                <div class="slide1_content_left_bottom">
-                  <div class="slide1_content_left_bottom_container">
-                    <div class="slide1_content_left_bottom_container_img">
-                      <img src="../../static/images/fushi.png" alt="">
-                    </div>
-                    <div class="slide1_content_left_bottom_container_content">
-                      <h1>노벨 경제학 수상자, 블록체인계에 합류… 경제이론과 블록체인의 만남을 통한 산업 발</h1>
-                      <p><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</p>
-                    </div>
-                  </div>
-                  <div class="slide1_content_left_bottom_container">
-                    <div class="slide1_content_left_bottom_container_img">
-                      <img src="../../static/images/fushi.png" alt="">
-                    </div>
-                    <div class="slide1_content_left_bottom_container_content">
-                      <h1>노벨 경제학 수상자, 블록체인계에 합류… 경제이론과 블록체인의 만남을 통한 산업 발</h1>
-                      <p><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</p>
-                    </div>
-                  </div>
-                  <div class="slide1_content_left_bottom_container">
-                    <div class="slide1_content_left_bottom_container_img">
-                      <img src="../../static/images/fushi.png" alt="">
-                    </div>
-                    <div class="slide1_content_left_bottom_container_content">
-                      <h1>노벨 경제학 수상자, 블록체인계에 합류… 경제이론과 블록체인의 만남을 통한 산업 발</h1>
-                      <p><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</p>
-                    </div>
-                  </div>
-                  <div class="slide1_content_left_bottom_container">
-                    <div class="slide1_content_left_bottom_container_img">
-                      <img src="../../static/images/fushi.png" alt="">
-                    </div>
-                    <div class="slide1_content_left_bottom_container_content">
-                      <h1>노벨 경제학 수상자, 블록체인계에 합류… 경제이론과 블록체인의 만남을 통한 산업 발</h1>
-                      <p><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</p>
-                    </div>
-                  </div>
-                </div>
+
               </div>
               <div class="slide2">
                 <div class="slide2_header">
                   <div class="slide2_header_text">
-                    <p>컨퍼런스</p>
+                    <p>{{$t('m.activity')}}</p>
                   </div>
                   <div class="slide2_header_button">
                     <div class="slide2_header_button_module">
-                      <div class="left_button">
+                      <div class="left_button" @click="getAcitiviveInfo1(1)">
 
                       </div>
-                      <div class="right_button">
+                      <div class="right_button" @click="getAcitiviveInfo1(2)">
 
                       </div>
                     </div>
@@ -175,47 +147,31 @@
                 </div>
                 <div class="slide2_content">
                   <div class="slide2_content_left">
-                    <div class="slide2_content_left_top">
-                      <img src="../../static/images/ad1.png" alt="">
+                    <div class="slide2_content_left_top black">
+                      <router-link :to="`/StimulationDetail?id=${activity1.id}&&id1=${activity1.categoryId}`" target='_blank' style="text-decoration: none">
+                      <img v-lazy="activity1.cover" alt="">
+                        <div style="width: 100%;height:100%;position: absolute;top: 0;transition: all .6s;" class="animated fade"></div>
+                      </router-link>
                     </div>
                     <div class="slide2_content_left_bottom">
-                      <h1>日 SBI 그룹, 새로운 투자로 암호화폐 파생상품
-                        플랫폼 개발 예정</h1>
+                      <router-link :to="`/StimulationDetail?id=${activity1.id}&&id1=${activity1.categoryId}`" target='_blank' style="text-decoration: none">
+                      <h1>{{activity1.title}}</h1>
+                      </router-link>
                       <h6><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h6>
-                      <p>일본의 금융서비스 대형그룹인 SBI 홀딩스가 새로운 투자로 미국의 장외시장
-                        서비스 제공업체인 클리어마켓(Clear Markets)의 지분을...</p>
+                      <router-link :to="`/StimulationDetail?id=${activity1.id}&&id1=${activity1.categoryId}`" target='_blank' style="text-decoration: none">
+                      <p style="height: 45px;overflow: hidden">{{activity1.description}}</p>
+                      </router-link>
                     </div>
                   </div>
                   <div class="slide2_content_right">
                     <ul>
-                      <li>
+                      <li v-for="item in activity2">
                         <div>
-                          <img src="../../static/images/ad1.png" alt="">
+                          <img v-lazy="item.cover" alt="">
                         </div>
-                        <p>웨스턴유니온, '암호화폐 안전송금
-                          시스템' 기술특허 출원</p>
+                        <p style="height: 50px;overflow: hidden">{{item.description}}</p>
                       </li>
-                      <li>
-                        <div>
-                          <img src="../../static/images/ad1.png" alt="">
-                        </div>
-                        <p>웨스턴유니온, '암호화폐 안전송금
-                          시스템' 기술특허 출원</p>
-                      </li>
-                      <li>
-                        <div>
-                          <img src="../../static/images/ad1.png" alt="">
-                        </div>
-                        <p>웨스턴유니온, '암호화폐 안전송금
-                          시스템' 기술특허 출원</p>
-                      </li>
-                      <li>
-                        <div>
-                          <img src="../../static/images/ad1.png" alt="">
-                        </div>
-                        <p>웨스턴유니온, '암호화폐 안전송금
-                          시스템' 기술특허 출원</p>
-                      </li>
+
 
                     </ul>
                   </div>
@@ -224,455 +180,495 @@
             </div>
           </div>
         </section>
-        <section class="main_container_right">
-          <div class="main_container_right_slide1">
-            <div class="main_container_right_slide1_header">
-              <div class="main_container_right_slide1_header_text">
-                <p>최신 뉴스</p>
-              </div>
-              <div class="main_container_right_slide1_header_button"></div>
+        <section class="main_container_right" style="position: relative" :style="{top:marginTops+'px'}">
+          <!--:class="navBarFixed == true ? 'navBarWrap' :''" v-show="!hiddenRight"-->
+        <div class="main_container_right_slide1">
+          <div class="main_container_right_slide1_header">
+            <div class="main_container_right_slide1_header_text">
+              <p>{{this.$t('m.latest')}}</p>
             </div>
+            <div class="main_container_right_slide1_header_button">
+              <div class="left_button" @click="getLatestNews1(1)" :class="{clicked:w==1}">
+              </div>
+              <div class="right_button" @click="getLatestNews1(2),w=1">
+
+              </div>
+            </div>
+          </div>
+          <ul v-loading="loading3"
+              element-loading-text="loading"
+              element-loading-spinner="el-icon-loading"
+              element-loading-background="rgba(0, 0, 0, 0.4)"
+              style="min-height: 500px"
+          >
+            <li v-for="(item,index) in latesNesList" class="animated fadeIn"  :class="'delay-1-'+index+'s'" v-if="right_loading">
+
+              <div class="li_left" style="position: relative">
+                <router-link :to="`/StimulationDetail?id=${item.categoryId}&&id1=${item.id}`" target='_blank' >
+                  <img src="../../static/images/loading.gif" alt="" v-if="loading_right">
+                  <img v-lazy="item.cover" alt="" class="animated fadeIn" v-else>
+                  <div style="width: 100%;height:100%;position: absolute;top: 0;transition: all .6s;" class="animated fade"></div>
+                </router-link>
+              </div>
+              <div class="li_right">
+                <router-link :to="`/StimulationDetail?id=${item.categoryId}&&id1=${item.id}`" target='_blank'>
+                  <h1>{{item.title}}</h1>
+                  <p><span><img src="../../static/images/time_black.png" alt=""></span>{{item.publishTime.split(' ')[0]}}</p>
+                </router-link>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!--<div class="main_container_right_slide2">-->
+        <!--<div class="main_container_right_slide2_top">-->
+        <!--<div class="title">-->
+        <!--<div class="title_left">-->
+        <!--<p>{{$t('m.weather')}}</p>-->
+        <!--</div>-->
+        <!--<div class="title_right"></div>-->
+        <!--</div>-->
+        <!--<div class="position">-->
+        <!--<h1>서울</h1>-->
+        <!--<p>맑음</p>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="main_container_right_slide2_center">-->
+        <!--<div class="content">-->
+        <!--<div class="content1">-->
+        <!--<div>-->
+        <!--<img src="../../static/images/shui.png" alt="">-->
+        <!--</div>-->
+        <!--<p>87%</p>-->
+        <!--</div>-->
+        <!--<div class="content2">-->
+        <!--<div>-->
+        <!--<img src="../../static/images/gui.png" alt="">-->
+        <!--</div>-->
+        <!--<p>1.5km/h</p>-->
+        <!--</div>-->
+        <!--<div class="content3">-->
+        <!--<div>-->
+        <!--<img src="../../static/images/yun.png" alt="">-->
+        <!--</div>-->
+        <!--<p>8%</p>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="main_container_right_slide2_bottom">-->
+        <!--<div class="d1">-->
+        <!--<div class="d1_left">-->
+        <!--<div>-->
+        <!--<img src="../../static/images/windy.png" alt="">-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="d1_center">14˚C</div>-->
+        <!--<div class="d1_right">-->
+        <!--<div class="right_top">-->
+        <!--<div>-->
+        <!--<img src="../../static/images/tttp.png" alt="">-->
+        <!--</div>-->
+        <!--<span>-->
+        <!--22˚C-->
+        <!--</span>-->
+        <!--</div>-->
+        <!--<div class="right_bottom">-->
+        <!--<div>-->
+        <!--<img src="../../static/images/bbbm.png" alt="">-->
+        <!--</div>-->
+        <!--<span>-->
+        <!--8˚C-->
+        <!--</span>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="d2">-->
+        <!--<ul>-->
+        <!--<li>-->
+        <!--<h1>26˚</h1>-->
+        <!--<p>THU</p>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<h1>26˚</h1>-->
+        <!--<p>THU</p>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<h1>26˚</h1>-->
+        <!--<p>THU</p>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<h1>26˚</h1>-->
+        <!--<p>THU</p>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<h1>26˚</h1>-->
+        <!--<p>THU</p>-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--&lt;!&ndash;<div class="icon sunny">&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="sun">&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="rays"></div>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<div class="icon rainy">&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="cloud"></div>&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="rain"></div>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<div class="icon cloudy">&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="cloud"></div>&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="cloud"></div>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<div class="icon flurries">&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="cloud"></div>&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="snow">&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="flake"></div>&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="flake"></div>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<div class="icon thunder-storm">&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="cloud"></div>&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="lightning">&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="bolt"></div>&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="bolt"></div>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<div class="icon sun-shower">&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="cloud"></div>&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="sun">&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="rays"></div>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="rain"></div>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--<div class="main_container_right_slide2_header"></div>-->
+        <!--</div>-->
+        <div class="main_container_right_slide3">
+          <div class="main_container_right_slide3_header">
+            <div class="main_container_right_slide3_header_text">
+              <p>{{$t('m.Employment_ad')}}</p>
+            </div>
+            <div class="main_container_right_slide3_header_btn"></div>
+          </div>
+          <div class="main_container_right_slide3_container">
             <ul>
-              <li>
-                <div class="li_left">
-                  <img src="../../static/images/asia3.png" alt="">
+              <li v-for="item in recruitList">
+                <div class="container_left">
+                  <router-link :to="`/StimulationDetail?id=${item.categoryId}&&id1=${item.id}`" target='_blank' style="text-decoration: none">
+                    <img v-lazy="item.cover" alt="">
+                  </router-link>
                 </div>
-                <div class="li_right">
-                  <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
-                  <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
-                </div>
-              </li>
-              <li>
-                <div class="li_left">
-                  <img src="../../static/images/asia3.png" alt="">
-                </div>
-                <div class="li_right">
-                  <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
-                  <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
+                <div class="container_right">
+                  <router-link :to="`/StimulationDetail?id=${item.categoryId}&&id1=${item.id}`" target='_blank' style="text-decoration: none">
+                    <h3>{{item.title}}</h3>
+                    <p style="height: 16px;overflow: hidden">{{item.description}}</p>
+                  </router-link>
                 </div>
               </li>
-              <li>
-                <div class="li_left">
-                  <img src="../../static/images/asia3.png" alt="">
-                </div>
-                <div class="li_right">
-                  <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
-                  <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
-                </div>
-              </li>
-              <li>
-                <div class="li_left">
-                  <img src="../../static/images/asia3.png" alt="">
-                </div>
-                <div class="li_right">
-                  <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
-                  <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
-                </div>
-              </li>
-              <li>
-                <div class="li_left">
-                  <img src="../../static/images/asia3.png" alt="">
-                </div>
-                <div class="li_right">
-                  <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
-                  <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
-                </div>
-              </li>
-              <li>
-                <div class="li_left">
-                  <img src="../../static/images/asia3.png" alt="">
-                </div>
-                <div class="li_right">
-                  <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
-                  <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
-                </div>
-              </li>
+
             </ul>
           </div>
-          <div class="main_container_right_slide2">
-            <div class="icon sunny">
-              <div class="sun">
-                <div class="rays"></div>
-              </div>
-            </div>
+        </div>
+      </section >
+        <!--<section class="main_container_right"  v-show="hiddenRight" style="margin-top: 403px">-->
+          <!--<div class="main_container_right_slide1">-->
+            <!--<div class="main_container_right_slide1_header">-->
+              <!--<div class="main_container_right_slide1_header_text">-->
+                <!--<p>{{this.$t('m.latest')}}</p>-->
+              <!--</div>-->
+              <!--<div class="main_container_right_slide1_header_button">-->
+                <!--<div class="left_button" @click="getLatestNews1(1)" :class="{clicked:w==1}">-->
+                <!--</div>-->
+                <!--<div class="right_button" @click="getLatestNews1(2),w=1">-->
 
-            <!--<div class="icon rainy">-->
-              <!--<div class="cloud"></div>-->
-              <!--<div class="rain"></div>-->
-            <!--</div>-->
-
-            <!--<div class="icon cloudy">-->
-              <!--<div class="cloud"></div>-->
-              <!--<div class="cloud"></div>-->
-            <!--</div>-->
-
-            <!--<div class="icon flurries">-->
-              <!--<div class="cloud"></div>-->
-              <!--<div class="snow">-->
-                <!--<div class="flake"></div>-->
-                <!--<div class="flake"></div>-->
+                <!--</div>-->
               <!--</div>-->
             <!--</div>-->
+            <!--<ul>-->
+              <!--<li v-for="(item,index) in latesNesList" class="animated fadeIn"  :class="'delay-1-'+index+'s'" v-if="right_loading">-->
 
-            <!--<div class="icon thunder-storm">-->
-              <!--<div class="cloud"></div>-->
-              <!--<div class="lightning">-->
-                <!--<div class="bolt"></div>-->
-                <!--<div class="bolt"></div>-->
-              <!--</div>-->
-            <!--</div>-->
+                <!--<div class="li_left" style="position: relative">-->
+                  <!--<router-link :to="`/StimulationDetail?id=${item.categoryId}&&id1=${item.id}`" target='_blank' >-->
+                    <!--<img src="../../static/images/loading.gif" alt="" v-if="loading_right">-->
+                    <!--<img v-lazy="item.cover" alt="" class="animated fadeIn" v-else>-->
+                    <!--<div style="width: 100%;height:100%;position: absolute;top: 0;transition: all .6s;" class="animated fade"></div>-->
+                  <!--</router-link>-->
+                <!--</div>-->
+                <!--<div class="li_right">-->
+                  <!--<router-link :to="`/StimulationDetail?id=${item.categoryId}&&id1=${item.id}`" target='_blank'>-->
+                    <!--<h1>{{item.title}}</h1>-->
+                    <!--<p><span><img src="../../static/images/time_black.png" alt=""></span>{{item.publishTime.split(' ')[0]}}</p>-->
+                  <!--</router-link>-->
+                <!--</div>-->
+              <!--</li>-->
+            <!--</ul>-->
+          <!--</div>-->
+          <!--&lt;!&ndash;<div class="main_container_right_slide2">&ndash;&gt;-->
+          <!--&lt;!&ndash;<div class="main_container_right_slide2_top">&ndash;&gt;-->
+          <!--&lt;!&ndash;<div class="title">&ndash;&gt;-->
+          <!--&lt;!&ndash;<div class="title_left">&ndash;&gt;-->
+          <!--&lt;!&ndash;<p>{{$t('m.weather')}}</p>&ndash;&gt;-->
+          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+          <!--&lt;!&ndash;<div class="title_right"></div>&ndash;&gt;-->
+          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+          <!--&lt;!&ndash;<div class="position">&ndash;&gt;-->
+          <!--&lt;!&ndash;<h1>서울</h1>&ndash;&gt;-->
+          <!--&lt;!&ndash;<p>맑음</p>&ndash;&gt;-->
+          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+          <!--&lt;!&ndash;<div class="main_container_right_slide2_center">&ndash;&gt;-->
+          <!--&lt;!&ndash;<div class="content">&ndash;&gt;-->
+          <!--&lt;!&ndash;<div class="content1">&ndash;&gt;-->
+          <!--&lt;!&ndash;<div>&ndash;&gt;-->
+          <!--&lt;!&ndash;<img src="../../static/images/shui.png" alt="">&ndash;&gt;-->
+          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+          <!--&lt;!&ndash;<p>87%</p>&ndash;&gt;-->
+          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+          <!--&lt;!&ndash;<div class="content2">&ndash;&gt;-->
+          <!--&lt;!&ndash;<div>&ndash;&gt;-->
+          <!--&lt;!&ndash;<img src="../../static/images/gui.png" alt="">&ndash;&gt;-->
+          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+          <!--&lt;!&ndash;<p>1.5km/h</p>&ndash;&gt;-->
+          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+          <!--&lt;!&ndash;<div class="content3">&ndash;&gt;-->
+          <!--&lt;!&ndash;<div>&ndash;&gt;-->
+          <!--&lt;!&ndash;<img src="../../static/images/yun.png" alt="">&ndash;&gt;-->
+          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+          <!--&lt;!&ndash;<p>8%</p>&ndash;&gt;-->
+          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+          <!--&lt;!&ndash;<div class="main_container_right_slide2_bottom">&ndash;&gt;-->
+          <!--&lt;!&ndash;<div class="d1">&ndash;&gt;-->
+          <!--&lt;!&ndash;<div class="d1_left">&ndash;&gt;-->
+          <!--&lt;!&ndash;<div>&ndash;&gt;-->
+          <!--&lt;!&ndash;<img src="../../static/images/windy.png" alt="">&ndash;&gt;-->
+          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+          <!--&lt;!&ndash;<div class="d1_center">14˚C</div>&ndash;&gt;-->
+          <!--&lt;!&ndash;<div class="d1_right">&ndash;&gt;-->
+          <!--&lt;!&ndash;<div class="right_top">&ndash;&gt;-->
+          <!--&lt;!&ndash;<div>&ndash;&gt;-->
+          <!--&lt;!&ndash;<img src="../../static/images/tttp.png" alt="">&ndash;&gt;-->
+          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+          <!--&lt;!&ndash;<span>&ndash;&gt;-->
+          <!--&lt;!&ndash;22˚C&ndash;&gt;-->
+          <!--&lt;!&ndash;</span>&ndash;&gt;-->
+          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+          <!--&lt;!&ndash;<div class="right_bottom">&ndash;&gt;-->
+          <!--&lt;!&ndash;<div>&ndash;&gt;-->
+          <!--&lt;!&ndash;<img src="../../static/images/bbbm.png" alt="">&ndash;&gt;-->
+          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+          <!--&lt;!&ndash;<span>&ndash;&gt;-->
+          <!--&lt;!&ndash;8˚C&ndash;&gt;-->
+          <!--&lt;!&ndash;</span>&ndash;&gt;-->
+          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+          <!--&lt;!&ndash;<div class="d2">&ndash;&gt;-->
+          <!--&lt;!&ndash;<ul>&ndash;&gt;-->
+          <!--&lt;!&ndash;<li>&ndash;&gt;-->
+          <!--&lt;!&ndash;<h1>26˚</h1>&ndash;&gt;-->
+          <!--&lt;!&ndash;<p>THU</p>&ndash;&gt;-->
+          <!--&lt;!&ndash;</li>&ndash;&gt;-->
+          <!--&lt;!&ndash;<li>&ndash;&gt;-->
+          <!--&lt;!&ndash;<h1>26˚</h1>&ndash;&gt;-->
+          <!--&lt;!&ndash;<p>THU</p>&ndash;&gt;-->
+          <!--&lt;!&ndash;</li>&ndash;&gt;-->
+          <!--&lt;!&ndash;<li>&ndash;&gt;-->
+          <!--&lt;!&ndash;<h1>26˚</h1>&ndash;&gt;-->
+          <!--&lt;!&ndash;<p>THU</p>&ndash;&gt;-->
+          <!--&lt;!&ndash;</li>&ndash;&gt;-->
+          <!--&lt;!&ndash;<li>&ndash;&gt;-->
+          <!--&lt;!&ndash;<h1>26˚</h1>&ndash;&gt;-->
+          <!--&lt;!&ndash;<p>THU</p>&ndash;&gt;-->
+          <!--&lt;!&ndash;</li>&ndash;&gt;-->
+          <!--&lt;!&ndash;<li>&ndash;&gt;-->
+          <!--&lt;!&ndash;<h1>26˚</h1>&ndash;&gt;-->
+          <!--&lt;!&ndash;<p>THU</p>&ndash;&gt;-->
+          <!--&lt;!&ndash;</li>&ndash;&gt;-->
+          <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;<div class="icon sunny">&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;<div class="sun">&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;<div class="rays"></div>&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;</div>&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;</div>&ndash;&gt;&ndash;&gt;-->
 
-            <!--<div class="icon sun-shower">-->
-              <!--<div class="cloud"></div>-->
-              <!--<div class="sun">-->
-                <!--<div class="rays"></div>-->
+          <!--&lt;!&ndash;&lt;!&ndash;<div class="icon rainy">&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;<div class="cloud"></div>&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;<div class="rain"></div>&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;</div>&ndash;&gt;&ndash;&gt;-->
+
+          <!--&lt;!&ndash;&lt;!&ndash;<div class="icon cloudy">&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;<div class="cloud"></div>&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;<div class="cloud"></div>&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;</div>&ndash;&gt;&ndash;&gt;-->
+
+          <!--&lt;!&ndash;&lt;!&ndash;<div class="icon flurries">&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;<div class="cloud"></div>&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;<div class="snow">&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;<div class="flake"></div>&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;<div class="flake"></div>&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;</div>&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;</div>&ndash;&gt;&ndash;&gt;-->
+
+          <!--&lt;!&ndash;&lt;!&ndash;<div class="icon thunder-storm">&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;<div class="cloud"></div>&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;<div class="lightning">&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;<div class="bolt"></div>&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;<div class="bolt"></div>&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;</div>&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;</div>&ndash;&gt;&ndash;&gt;-->
+
+          <!--&lt;!&ndash;&lt;!&ndash;<div class="icon sun-shower">&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;<div class="cloud"></div>&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;<div class="sun">&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;<div class="rays"></div>&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;</div>&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;<div class="rain"></div>&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;</div>&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;<div class="main_container_right_slide2_header"></div>&ndash;&gt;-->
+          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+          <!--<div class="main_container_right_slide3">-->
+            <!--<div class="main_container_right_slide3_header">-->
+              <!--<div class="main_container_right_slide3_header_text">-->
+                <!--<p>{{$t('m.Employment_ad')}}</p>-->
               <!--</div>-->
-              <!--<div class="rain"></div>-->
+              <!--<div class="main_container_right_slide3_header_btn"></div>-->
             <!--</div>-->
-            <div class="main_container_right_slide2_header"></div>
-          </div>
-          <div class="main_container_right_slide3">
-            <div class="main_container_right_slide3_header">
-              <div class="main_container_right_slide3_header_text">
-                <p>최신채용 공고</p>
-              </div>
-              <div class="main_container_right_slide3_header_btn"></div>
-            </div>
-            <div class="main_container_right_slide3_container">
-              <ul>
-                <li>
-                  <div class="container_left">
-                    <img src="../../static/images/ad1.png" alt="">
-                  </div>
-                  <div class="container_right">
-                    <h3>최신채용 공고 최신채용 공고</h3>
-                    <p>최신채용 공고</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="container_left">
-                    <img src="../../static/images/ad1.png" alt="">
-                  </div>
-                  <div class="container_right">
-                    <h3>최신채용 공고 최신채용 공고</h3>
-                    <p>최신채용 공고</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="container_left">
-                    <img src="../../static/images/ad1.png" alt="">
-                  </div>
-                  <div class="container_right">
-                    <h3>최신채용 공고 최신채용 공고</h3>
-                    <p>최신채용 공고</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="container_left">
-                    <img src="../../static/images/ad1.png" alt="">
-                  </div>
-                  <div class="container_right">
-                    <h3>최신채용 공고 최신채용 공고</h3>
-                    <p>최신채용 공고</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
+            <!--<div class="main_container_right_slide3_container">-->
+              <!--<ul>-->
+                <!--<li v-for="item in recruitList">-->
+                  <!--<div class="container_left">-->
+                    <!--<router-link :to="`/StimulationDetail?id=${item.categoryId}&&id1=${item.id}`" target='_blank' style="text-decoration: none">-->
+                      <!--<img v-lazy="item.cover" alt="">-->
+                    <!--</router-link>-->
+                  <!--</div>-->
+                  <!--<div class="container_right">-->
+                    <!--<router-link :to="`/StimulationDetail?id=${item.categoryId}&&id1=${item.id}`" target='_blank' style="text-decoration: none">-->
+                      <!--<h3>{{item.title}}</h3>-->
+                      <!--<p style="height: 16px;overflow: hidden">{{item.description}}</p>-->
+                    <!--</router-link>-->
+                  <!--</div>-->
+                <!--</li>-->
+
+              <!--</ul>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</section >-->
       </section>
       <section class="main_container1">
         <div class="news1">
           <div class="news1_title">
             <div class="news1_title_text">
-              <p>인사이트</p>
+              <p>{{$t('m.insight')}}</p>
             </div>
             <div class="news1_title_btn"></div>
           </div>
           <div class="news1_container">
             <ul>
-              <li>
-                <div class="news1_container_left">
-                  <img src="../../static/images/asia1.png" alt="">
+              <li v-for="item in insightList">
+                <div class="news1_container_left black">
+                  <router-link :to="`/StimulationDetail?id=${item.categoryId}&&id1=${item.id}`" target='_blank'>
+                  <img v-lazy="item.cover" alt="">
+                    <div style="width: 100%;height:100%;position: absolute;top: 0;transition: all .6s;" class="animated fade"></div>
+                  </router-link>
                 </div>
                 <div class="news1_container_right">
-                  <h1>日 SBI 그룹, 새로운 투자로 암호화폐 파생상품 플랫폼 개발</h1>
-                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
-                  <p>일본의 금융서비스 대형그룹인 SBI 홀딩스가 새로운 투자로 미국의 장외시장 전자
-                    파생상품 서비스 제공업체인 클리어마켓(Clear Markets)의 지분을 12% 인수했으
-                    며 추후 20%까지 확장할 예정이라 밝혔다.</p>
-                  <div>
-                    <p>더 읽기</p>
-                  </div>
+
+                  <h1>{{item.title}}</h1>
+                  <h3><span><img src="../../static/images/timea.png" alt=""></span>{{item.publishTime.split(' ')[0].replace(new RegExp("-",("gm")),":")}}</h3>
+                  <p>{{item.description}}</p>
+
+                    <div>
+                      <router-link :to="`/StimulationDetail?id=${item.categoryId}&&id1=${item.id}`" target='_blank' style="text-decoration: none">
+                      <p>{{$t('m.read_more')}}</p>
+                      </router-link>
+                    </div>
+
                 </div>
               </li>
-              <li>
-                <div class="news1_container_left">
-                  <img src="../../static/images/asia1.png" alt="">
-                </div>
-                <div class="news1_container_right">
-                  <h1>日 SBI 그룹, 새로운 투자로 암호화폐 파생상품 플랫폼 개발</h1>
-                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
-                  <p>일본의 금융서비스 대형그룹인 SBI 홀딩스가 새로운 투자로 미국의 장외시장 전자
-                    파생상품 서비스 제공업체인 클리어마켓(Clear Markets)의 지분을 12% 인수했으
-                    며 추후 20%까지 확장할 예정이라 밝혔다.</p>
-                  <div>
-                    <p>더 읽기</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="news1_container_left">
-                  <img src="../../static/images/asia1.png" alt="">
-                </div>
-                <div class="news1_container_right">
-                  <h1>日 SBI 그룹, 새로운 투자로 암호화폐 파생상품 플랫폼 개발</h1>
-                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
-                  <p>일본의 금융서비스 대형그룹인 SBI 홀딩스가 새로운 투자로 미국의 장외시장 전자
-                    파생상품 서비스 제공업체인 클리어마켓(Clear Markets)의 지분을 12% 인수했으
-                    며 추후 20%까지 확장할 예정이라 밝혔다.</p>
-                  <div>
-                    <p>더 읽기</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="news1_container_left">
-                  <img src="../../static/images/asia1.png" alt="">
-                </div>
-                <div class="news1_container_right">
-                  <h1>日 SBI 그룹, 새로운 투자로 암호화폐 파생상품 플랫폼 개발</h1>
-                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
-                  <p>일본의 금융서비스 대형그룹인 SBI 홀딩스가 새로운 투자로 미국의 장외시장 전자
-                    파생상품 서비스 제공업체인 클리어마켓(Clear Markets)의 지분을 12% 인수했으
-                    며 추후 20%까지 확장할 예정이라 밝혔다.</p>
-                  <div>
-                    <p>더 읽기</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="news1_container_left">
-                  <img src="../../static/images/asia1.png" alt="">
-                </div>
-                <div class="news1_container_right">
-                  <h1>日 SBI 그룹, 새로운 투자로 암호화폐 파생상품 플랫폼 개발</h1>
-                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
-                  <p>일본의 금융서비스 대형그룹인 SBI 홀딩스가 새로운 투자로 미국의 장외시장 전자
-                    파생상품 서비스 제공업체인 클리어마켓(Clear Markets)의 지분을 12% 인수했으
-                    며 추후 20%까지 확장할 예정이라 밝혔다.</p>
-                  <div>
-                    <p>더 읽기</p>
-                  </div>
-                </div>
-              </li>
+
             </ul>
+            <router-link to="/insight" target="_blank">
             <div class="more">
-              <p>더 많은 정보 보기s</p>
+              <p>{{$t('m.readMore')}}</p>
             </div>
+            </router-link>
           </div>
         </div>
         <div class="news1">
           <div class="news1_title">
             <div class="news1_title_text">
-              <p>인사이트</p>
+              <p>{{$t('m.vipInformation')}}</p>
             </div>
             <div class="news1_title_btn"></div>
           </div>
           <div class="news1_container">
             <ul>
-              <li>
-                <div class="news1_container_left">
-                  <img src="../../static/images/asia1.png" alt="">
+              <li v-for="item in vipList">
+                <div class="news1_container_left black">
+                  <router-link :to="`/StimulationDetail?id=${item.categoryId}&&id1=${item.id}`" target='_blank'>
+                  <img v-lazy="item.cover" alt="">
+                    <div style="width: 100%;height:100%;position: absolute;top: 0;transition: all .6s;" class="animated fade"></div>
+                  </router-link>
                 </div>
                 <div class="news1_container_right">
-                  <h1>日 SBI 그룹, 새로운 투자로 암호화폐 파생상품 플랫폼 개발</h1>
-                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
-                  <p>일본의 금융서비스 대형그룹인 SBI 홀딩스가 새로운 투자로 미국의 장외시장 전자
-                    파생상품 서비스 제공업체인 클리어마켓(Clear Markets)의 지분을 12% 인수했으
-                    며 추후 20%까지 확장할 예정이라 밝혔다.</p>
+                  <h1>{{item.title}}</h1>
+                  <h3><span><img src="../../static/images/timea.png" alt=""></span>{{item.publishTime.split(' ')[0].replace(new RegExp("-",("gm")),":")}}</h3>
+                  <p>{{item.description}}</p>
                   <div>
-                    <p>더 읽기</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="news1_container_left">
-                  <img src="../../static/images/asia1.png" alt="">
-                </div>
-                <div class="news1_container_right">
-                  <h1>日 SBI 그룹, 새로운 투자로 암호화폐 파생상품 플랫폼 개발</h1>
-                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
-                  <p>일본의 금융서비스 대형그룹인 SBI 홀딩스가 새로운 투자로 미국의 장외시장 전자
-                    파생상품 서비스 제공업체인 클리어마켓(Clear Markets)의 지분을 12% 인수했으
-                    며 추후 20%까지 확장할 예정이라 밝혔다.</p>
-                  <div>
-                    <p>더 읽기</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="news1_container_left">
-                  <img src="../../static/images/asia1.png" alt="">
-                </div>
-                <div class="news1_container_right">
-                  <h1>日 SBI 그룹, 새로운 투자로 암호화폐 파생상품 플랫폼 개발</h1>
-                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
-                  <p>일본의 금융서비스 대형그룹인 SBI 홀딩스가 새로운 투자로 미국의 장외시장 전자
-                    파생상품 서비스 제공업체인 클리어마켓(Clear Markets)의 지분을 12% 인수했으
-                    며 추후 20%까지 확장할 예정이라 밝혔다.</p>
-                  <div>
-                    <p>더 읽기</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="news1_container_left">
-                  <img src="../../static/images/asia1.png" alt="">
-                </div>
-                <div class="news1_container_right">
-                  <h1>日 SBI 그룹, 새로운 투자로 암호화폐 파생상품 플랫폼 개발</h1>
-                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
-                  <p>일본의 금융서비스 대형그룹인 SBI 홀딩스가 새로운 투자로 미국의 장외시장 전자
-                    파생상품 서비스 제공업체인 클리어마켓(Clear Markets)의 지분을 12% 인수했으
-                    며 추후 20%까지 확장할 예정이라 밝혔다.</p>
-                  <div>
-                    <p>더 읽기</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="news1_container_left">
-                  <img src="../../static/images/asia1.png" alt="">
-                </div>
-                <div class="news1_container_right">
-                  <h1>日 SBI 그룹, 새로운 투자로 암호화폐 파생상품 플랫폼 개발</h1>
-                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
-                  <p>일본의 금융서비스 대형그룹인 SBI 홀딩스가 새로운 투자로 미국의 장외시장 전자
-                    파생상품 서비스 제공업체인 클리어마켓(Clear Markets)의 지분을 12% 인수했으
-                    며 추후 20%까지 확장할 예정이라 밝혔다.</p>
-                  <div>
-                    <p>더 읽기</p>
+                    <router-link :to="`/StimulationDetail?id=${item.categoryId}&&id1=${item.id}`" target='_blank' style="text-decoration: none">
+                    <p>{{$t('m.read_more')}}</p>
+                    </router-link>
                   </div>
                 </div>
               </li>
             </ul>
+            <router-link to="/noname" target="_blank">
             <div class="more">
-              <p>더 많은 정보 보기s</p>
+              <p>{{$t('m.readMore')}}</p>
             </div>
+            </router-link>
           </div>
         </div>
       </section>
       <section class="main_container2">
         <div class="news">
           <div class="news_title">
-            <p>실시간 핫이슈</p>
+            <p>{{$t('m.hotTopic')}}</p>
           </div>
           <div class="news_container">
             <ul>
-              <li>
-                <div class="li_top">
-                  <img src="../../static/images/ad1.png" alt="">
+              <li v-for="item in HotestList">
+                <div class="li_top black">
+                  <router-link :to="`/StimulationDetail?id=${item.categoryId}&&id1=${item.id}`" target='_blank'>
+                  <img  v-lazy="item.cover" alt="">
+                    <div style="width: 100%;height:100%;position: absolute;top: 0;transition: all .6s;" class="animated fade"></div>
+                  </router-link>
                 </div>
                 <div class="li_bottom">
-                  <h1>바이낸스, 모바일 월렛 스타트업 ‘트러스트 월렛’ 인수</h1>
+                  <h1 style="height: 40px;">{{item.title}}</h1>
                   <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
-                  <p>세계 최대 암호화폐 거래소 바이낸스가 인수합병(M&A)에 본격적인 시동
-                    을 걸었다. 바이낸스는 첫 M&A 대상으로 암호화폐 월렛 스타트업 '트러
-                    스트 월렛(Trust Wallet)'을 선택했다.</p>
+                  <p style="height: 40px;overflow: hidden">{{item.description}}</p>
                 </div>
               </li>
-              <li>
-                <div class="li_top">
-                  <img src="../../static/images/ad1.png" alt="">
-                </div>
-                <div class="li_bottom">
-                  <h1>바이낸스, 모바일 월렛 스타트업 ‘트러스트 월렛’ 인수</h1>
-                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
-                  <p>세계 최대 암호화폐 거래소 바이낸스가 인수합병(M&A)에 본격적인 시동
-                    을 걸었다. 바이낸스는 첫 M&A 대상으로 암호화폐 월렛 스타트업 '트러
-                    스트 월렛(Trust Wallet)'을 선택했다.</p>
-                </div>
-              </li>
-              <li>
-                <div class="li_top">
-                  <img src="../../static/images/ad1.png" alt="">
-                </div>
-                <div class="li_bottom">
-                  <h1>바이낸스, 모바일 월렛 스타트업 ‘트러스트 월렛’ 인수</h1>
-                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
-                  <p>세계 최대 암호화폐 거래소 바이낸스가 인수합병(M&A)에 본격적인 시동
-                    을 걸었다. 바이낸스는 첫 M&A 대상으로 암호화폐 월렛 스타트업 '트러
-                    스트 월렛(Trust Wallet)'을 선택했다.</p>
-                </div>
-              </li>
-              <li>
-                <div class="li_top">
-                  <img src="../../static/images/ad1.png" alt="">
-                </div>
-                <div class="li_bottom">
-                  <h1>바이낸스, 모바일 월렛 스타트업 ‘트러스트 월렛’ 인수</h1>
-                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
-                  <p>세계 최대 암호화폐 거래소 바이낸스가 인수합병(M&A)에 본격적인 시동
-                    을 걸었다. 바이낸스는 첫 M&A 대상으로 암호화폐 월렛 스타트업 '트러
-                    스트 월렛(Trust Wallet)'을 선택했다.</p>
-                </div>
-              </li>
-              <li>
-                <div class="li_top">
-                  <img src="../../static/images/ad1.png" alt="">
-                </div>
-                <div class="li_bottom">
-                  <h1>바이낸스, 모바일 월렛 스타트업 ‘트러스트 월렛’ 인수</h1>
-                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
-                  <p>세계 최대 암호화폐 거래소 바이낸스가 인수합병(M&A)에 본격적인 시동
-                    을 걸었다. 바이낸스는 첫 M&A 대상으로 암호화폐 월렛 스타트업 '트러
-                    스트 월렛(Trust Wallet)'을 선택했다.</p>
-                </div>
-              </li>
-              <li>
-                <div class="li_top">
-                  <img src="../../static/images/ad1.png" alt="">
-                </div>
-                <div class="li_bottom">
-                  <h1>바이낸스, 모바일 월렛 스타트업 ‘트러스트 월렛’ 인수</h1>
-                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
-                  <p>세계 최대 암호화폐 거래소 바이낸스가 인수합병(M&A)에 본격적인 시동
-                    을 걸었다. 바이낸스는 첫 M&A 대상으로 암호화폐 월렛 스타트업 '트러
-                    스트 월렛(Trust Wallet)'을 선택했다.</p>
-                </div>
-              </li>
-              <li>
-                <div class="li_top">
-                  <img src="../../static/images/ad1.png" alt="">
-                </div>
-                <div class="li_bottom">
-                  <h1>바이낸스, 모바일 월렛 스타트업 ‘트러스트 월렛’ 인수</h1>
-                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
-                  <p>세계 최대 암호화폐 거래소 바이낸스가 인수합병(M&A)에 본격적인 시동
-                    을 걸었다. 바이낸스는 첫 M&A 대상으로 암호화폐 월렛 스타트업 '트러
-                    스트 월렛(Trust Wallet)'을 선택했다.</p>
-                </div>
-              </li>
-              <li>
-                <div class="li_top">
-                  <img src="../../static/images/ad1.png" alt="">
-                </div>
-                <div class="li_bottom">
-                  <h1>바이낸스, 모바일 월렛 스타트업 ‘트러스트 월렛’ 인수</h1>
-                  <h3><span><img src="../../static/images/timea.png" alt=""></span>March 12,2018</h3>
-                  <p>세계 최대 암호화폐 거래소 바이낸스가 인수합병(M&A)에 본격적인 시동
-                    을 걸었다. 바이낸스는 첫 M&A 대상으로 암호화폐 월렛 스타트업 '트러
-                    스트 월렛(Trust Wallet)'을 선택했다.</p>
-                </div>
-              </li>
+
 
             </ul>
             <div class="pagination">
               <el-pagination
                 background
                 layout="prev, pager, next"
-                :total="70"
+                :page-size="pageSize"
+                :total="count"
+                @current-change="getHotestNews"
                 style="background: white"
               >
               </el-pagination>
@@ -681,168 +677,367 @@
         </div>
       </section>
     </section>
-    <section class="footer_add">
-      <div class="footer_add_container">
-        <div class="footer_add_item">
-            <div class="footer_add_title">
-              <p>정책 뉴스</p>
-            </div>
-            <div class="footer_add_content">
-              <ul>
-                <li>
-                  <div class="li_left">
-                    <img src="../../static/images/ad1.png" alt="">
-                  </div>
-                  <div class="li_right">
-                    <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
-                    <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="li_left">
-                    <img src="../../static/images/ad1.png" alt="">
-                  </div>
-                  <div class="li_right">
-                    <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
-                    <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="li_left">
-                    <img src="../../static/images/ad1.png" alt="">
-                  </div>
-                  <div class="li_right">
-                    <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
-                    <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-        </div>
-        <div class="footer_add_item">
-          <div class="footer_add_title">
-            <p>정책 뉴스</p>
-          </div>
-          <div class="footer_add_content">
-            <ul>
-              <li>
-                <div class="li_left">
-                  <img src="../../static/images/ad1.png" alt="">
-                </div>
-                <div class="li_right">
-                  <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
-                  <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
-                </div>
-              </li>
-              <li>
-                <div class="li_left">
-                  <img src="../../static/images/ad1.png" alt="">
-                </div>
-                <div class="li_right">
-                  <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
-                  <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
-                </div>
-              </li>
-              <li>
-                <div class="li_left">
-                  <img src="../../static/images/ad1.png" alt="">
-                </div>
-                <div class="li_right">
-                  <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
-                  <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer_add_item">
-          <div class="footer_add_title">
-            <p>정책 뉴스</p>
-          </div>
-          <div class="footer_add_content">
-            <ul>
-              <li>
-                <div class="li_left">
-                  <img src="../../static/images/ad1.png" alt="">
-                </div>
-                <div class="li_right">
-                  <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
-                  <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
-                </div>
-              </li>
-              <li>
-                <div class="li_left">
-                  <img src="../../static/images/ad1.png" alt="">
-                </div>
-                <div class="li_right">
-                  <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
-                  <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
-                </div>
-              </li>
-              <li>
-                <div class="li_left">
-                  <img src="../../static/images/ad1.png" alt="">
-                </div>
-                <div class="li_right">
-                  <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
-                  <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer_add_item">
-          <div class="footer_add_title">
-            <p>정책 뉴스</p>
-          </div>
-          <div class="footer_add_content">
-            <ul>
-              <li>
-                <div class="li_left">
-                  <img src="../../static/images/ad1.png" alt="">
-                </div>
-                <div class="li_right">
-                  <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
-                  <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
-                </div>
-              </li>
-              <li>
-                <div class="li_left">
-                  <img src="../../static/images/ad1.png" alt="">
-                </div>
-                <div class="li_right">
-                  <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
-                  <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
-                </div>
-              </li>
-              <li>
-                <div class="li_left">
-                  <img src="../../static/images/ad1.png" alt="">
-                </div>
-                <div class="li_right">
-                  <h1>리플, 마돈나와 말라위 고아 기금 모금 파트너십 체결</h1>
-                  <p><span><img src="../../static/images/time_black.png" alt=""></span>March 12,2018</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </section>
+    <FooterNews/>
   </main>
 </template>
 
 <script>
+  import FooterNews from '../components/FooterNews'
+  import Tab from '../components/Tab'
+  import * as apiRequest from '../api/index'
   export default {
-    name: "home"
+    name: "home",
+    data(){
+      return {
+        refreshM:true,
+        loading3:true,
+        loading2:true,
+        right_loading:true,
+        loading_right:true,
+        loading_top:true,
+        w:0,
+        latesNesList:[],
+        recruitList:[],
+        n:1,
+        countList:[],
+        news1:[],
+        news2:[],
+        insightList:[],
+        vipList:[],
+        HotestList:[],
+        activity1:[],
+        activity2:[],
+        typeList1:[
+          // {
+          //   cover:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1537095832513&di=dac2170a001ccbcd1e758073ae70011a&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01491557e1e0f00000012e7e66d689.gif',
+          //   title:'',
+          // }
+        ],
+        typeList2:[],
+        count:0,
+        page:1,
+        pageSize:8,
+        ad1:[],
+        ad2:[],
+        ad3:[],
+        navBarFixed:false,
+        hiddenRight:false,
+        marginTops:0,
+      }
+    },
+    mounted(){
+      this.getTypeLastesNews()
+      this.getNew1()
+      this.getInsightList()
+      this.getLatestNews()
+      this.getRecruitList()
+      this.getVipList()
+      this.getHotestNews()
+      this.getAcitiviveInfo()
+      this.getAD()
+      this.getAD1()
+      this.getAD2()
+      // window.addEventListener('scroll', this.watchScroll)
+    },
+    methods:{
+      watchScroll () {
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+        console.log(scrollTop)
+        //  当滚动超过 130 时，实现吸顶效果
+        if (scrollTop > 370&&scrollTop<=773) {
+          this.marginTops = scrollTop-370
+        }else if(scrollTop > 774){
+          // this.navBarFixed = false
+        }else if(scrollTop<=370){
+          // this.marginTops =
+        }
+      },
+      //AD
+      getAD(){
+        apiRequest.Advert({
+          position:1
+        }).then(
+          data=>{
+            this.ad1 = data.data[0]
+          }
+        )
+      },
+      getAD1(){
+        apiRequest.Advert({
+          position:2
+        }).then(
+          data=>{
+            this.ad2 = data.data[0]
+          }
+        )
+      },
+      getAD2(){
+        apiRequest.Advert({
+          position:3
+        }).then(
+          data=>{
+            this.ad3 = data.data[0]
+          }
+        )
+      },
+      //首页综合新闻
+      getTypeLastesNews(){
+        apiRequest.TypeLastesNews({
+          pageSize:5
+        }).then(
+          data=>{
+            // setTimeout(()=>{
+              this.typeList1 = data.data.slice(0,3)
+              this.typeList2 = data.data.slice(3,5)
+              // this.loading_top = false
+            // },1500)
+          }
+        )
+      },
+      //获取活动信息
+      getAcitiviveInfo(){
+        apiRequest.ContentList({
+          type:'activity',
+          pageSize:5
+        }).then(
+          data=>{
+            console.log(data)
+            console.log('555555555555555555')
+          this.activity1 = data.data[0];
+          this.activity2 = data.data.slice(1,5)
+
+          }
+        )
+      },
+      getAcitiviveInfo1(num){
+        apiRequest.ContentList({
+          type:'activity',
+          pageSize:5,
+          direction:num
+        }).then(
+          data=>{
+            console.log(data)
+            console.log('555555555555555555')
+            this.activity1 = data.data[0];
+            this.activity2 = data.data.slice(1,5)
+
+          }
+        )
+      },
+      //insight
+      getInsightList(){
+        apiRequest.ContentList({
+          type:'insight',
+          pageSize:5
+        }).then(
+          data=>{
+            if(data.code == 1000){
+              this.insightList = data.data
+            }
+          }
+        )
+      },
+      //vip
+      getVipList(){
+        apiRequest.ContentList({
+          type:'senior',
+          pageSize:5
+        }).then(
+          data=>{
+            if(data.code == 1000){
+              this.vipList = data.data
+            }
+          }
+        )
+      },
+      //获取新闻列表
+
+      //政策新闻
+      getNew1(){
+        apiRequest.ContentList({
+          type:'policy',
+          pageSize:6
+        }).then(
+          data=>{
+            this.loading2 = true
+            setTimeout(()=>{
+              this.refreshM = true
+              this.loading2 = false
+              this.refreshM = true
+              this.news1 = data.data.slice(0,2)
+              this.news2 = data.data.slice(2,6)
+            },1000)
+
+          }
+        )
+      },
+      //研究
+      getNew2(){
+        apiRequest.ContentList({
+          type:'research',
+          pageSize:6
+        }).then(
+          data=>{
+            this.loading2 = true
+            setTimeout(()=>{
+              this.refreshM = true
+              this.loading2 = false
+              this.refreshM = true
+              this.news1 = data.data.slice(0,2)
+              this.news2 = data.data.slice(2,6)
+            },1000)
+          }
+        )
+      },
+      //人物
+      getNew3(){
+        apiRequest.ContentList({
+          type:'character',
+          pageSize:6
+        }).then(
+          data=>{
+            this.loading2 = true
+            setTimeout(()=>{
+              this.refreshM = true
+              this.loading2 = false
+              this.refreshM = true
+              this.news1 = data.data.slice(0,2)
+              this.news2 = data.data.slice(2,6)
+            },1000)
+          }
+        )
+      },
+      //科技
+      getNew4(){
+        apiRequest.ContentList({
+          type:'technology',
+          pageSize:6
+        }).then(
+          data=>{
+            this.loading2 = true
+            setTimeout(()=>{
+              this.refreshM = true
+              this.loading2 = false
+              this.refreshM = true
+              this.news1 = data.data.slice(0,2)
+              this.news2 = data.data.slice(2,6)
+            },1000)
+          }
+        )
+      },
+      //海外
+      getNew5(){
+        apiRequest.ContentList({
+          type:'overseas',
+          pageSize:6
+        }).then(
+          data=>{
+            this.loading2 = true
+            setTimeout(()=>{
+              this.refreshM = true
+              this.loading2 = false
+              this.refreshM = true
+              this.news1 = data.data.slice(0,2)
+              this.news2 = data.data.slice(2,6)
+            },1000)
+          }
+        )
+      },
+
+      //行情
+      getNew6(){
+        apiRequest.ContentList({
+          type:'market_price',
+          pageSize:6
+        }).then(
+          data=>{
+            this.loading2 = true
+            setTimeout(()=>{
+              this.refreshM = true
+              this.loading2 = false
+              this.refreshM = true
+              this.news1 = data.data.slice(0,2)
+              this.news2 = data.data.slice(2,6)
+            },1000)
+          }
+        )
+      },
+      //获取最新新闻
+      getLatestNews(){
+        apiRequest.LatestNews({
+        }).then(
+          data=>{
+            if(data.code === 1000){
+                this.loading3 = true
+              setTimeout(()=>{
+                this.loading3 = false
+                this.loading_right = false
+                this.latesNesList = data.data
+
+              },1000)
+            }
+          }
+        )
+      },
+      getLatestNews1(num){
+        apiRequest.LatestNews({
+          direction:num,
+        }).then(
+          data=>{
+            if(data.code === 1000){
+              this.loading3 = true
+              this.loading_right = true
+              setTimeout(()=>{
+                this.loading3 = false
+                this.loading_right = false
+                this.latesNesList = data.data
+              },1000)
+            }
+          }
+        )
+      },
+      getHotestNews(page = 1 ){
+        apiRequest.HotNews({
+          pageSize:this.pageSize,
+          page
+        })
+          .then(
+            data=>{
+              this.HotestList = data.data
+              this.count = data.totalNums
+            }
+          )
+      },
+      //获取招聘信息
+      getRecruitList(){
+        apiRequest.ContentList({
+          type:'recruit'
+        }).then(
+          data=>{
+            if(data.code == 1000){
+              this.recruitList = data.data.slice(0,4)
+              console.log(this.recruitList)
+              console.log('222222222222222')
+            }else{
+              console.log(data.msg)
+            }
+          }
+        )
+      }
+    },
+    components:{
+      FooterNews,
+      Tab
+    }
   }
 </script>
+
 <style scoped lang="less">
   main{
     background: #F5F5F5;
+    padding-top: 20px;
     .main{
-      padding-top: 20px;
+      /*padding-top: 20px;*/
       width: 1400px;
       margin: 0 auto;
       .main_container{
@@ -853,13 +1048,19 @@
           width: 1079px;
           .main_container_left_section1{
             width: 100%;
+            height: 484px;
+            background: white;
             .main_container_left_section1_top{
               width: 100%;
               display: flex;
               flex-direction: row;
               justify-content: space-between;
               .banner1:hover .banner1_content{
-                background: linear-gradient(bottom,rgba(0,0,0,.7),rgba(255,255,255,0));
+                background: -webkit-linear-gradient(bottom,rgba(0,0,0,.7),rgba(255,255,255,0)); /* Safari 5.1 - 6.0 */
+                background: -o-linear-gradient(bottom,rgba(0,0,0,.7),rgba(255,255,255,0)); /* Opera 11.1 - 12.0 */
+                background: -moz-linear-gradient(bottom,rgba(0,0,0,.7),rgba(255,255,255,0)); /* Firefox 3.6 - 15 */
+                background: linear-gradient(bottom,rgba(0,0,0,.7),rgba(255,255,255,0)); /* 标准的语法 */
+
               }
               .banner1:hover img{
                 transform: scale(1.1);
@@ -871,12 +1072,17 @@
                 overflow: hidden;
                 position: relative;
                 transition: all .6s;
+                img{
+                  width: 100%;
+                  height: 100%;
+                }
                 .banner1_content{
+                  width: 100%;
                   position: absolute;
                   bottom: 0;
                   transition: all .6s;
                   div{
-                    width: 40px;
+                    width: 60px;
                     height: 16px;
                     line-height: 16px;
                     background: black;
@@ -887,6 +1093,7 @@
                       font-family:NotoSansCJKkr-DemiLight;
                       color:rgba(255,255,255,1);
                       text-align: center;
+                      width: auto!important;
                     }
                   }
                   p{
@@ -918,7 +1125,10 @@
               justify-content: space-between;
               margin-top: 4px;
               .banner2:hover .banner1_content{
-                background: linear-gradient(bottom,rgba(0,0,0,.7),rgba(255,255,255,0));
+                background: -webkit-linear-gradient(bottom,rgba(0,0,0,.7),rgba(255,255,255,0)); /* Safari 5.1 - 6.0 */
+                background: -o-linear-gradient(bottom,rgba(0,0,0,.7),rgba(255,255,255,0)); /* Opera 11.1 - 12.0 */
+                background: -moz-linear-gradient(bottom,rgba(0,0,0,.7),rgba(255,255,255,0)); /* Firefox 3.6 - 15 */
+                background: linear-gradient(bottom,rgba(0,0,0,.7),rgba(255,255,255,0)); /* 标准的语法 */
                 transition: all .6s;
               }
               .banner2:hover img{
@@ -927,10 +1137,10 @@
               .banner2{
                 width: 538px;
                 height: 242px;
-                background: orange;
                 cursor: pointer;
                 overflow: hidden;
                 position: relative;
+                background: white;
                 .banner1_content{
                   position: absolute;
                   bottom: 0;
@@ -1291,7 +1501,7 @@
         .main_container_right{
           width: 300px;
           .main_container_right_slide1{
-            height: 769px;
+            height: auto;
             padding: 20px;
             background: black;
             .main_container_right_slide1_header{
@@ -1314,6 +1524,26 @@
               .main_container_right_slide1_header_button{
                 width: 140px;
                 border-bottom: 2px solid #212121;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+                height: 36px;
+                .left_button{
+                  width: 14px;
+                  height: 14px;
+                  background: url("../../static/images/lleft.png");
+                  background-size: cover;
+                  cursor: pointer;
+                }
+                .right_button{
+                  width: 14px;
+                  height: 14px;
+                  background: url("../../static/images/rright.png");
+                  background-size: cover;
+                  margin-left: 2px;
+                  cursor: pointer;
+                }
               }
 
             }
@@ -1328,10 +1558,15 @@
                 .li_left{
                   width: 109px;
                   height: 72px;
+                  transition: all 3s;
                   img{
                     width: 100%;
                     height: 100%;
+                    cursor: pointer;
                   }
+                }
+                .li_left:hover div{
+                  background: rgba(0,0,0,0.5);
                 }
                 .li_right{
                   width: 151px;
@@ -1343,12 +1578,22 @@
                     font-family:NotoSansCJKkr-Medium;
                     color:rgba(245,245,245,1);
                     line-height:18px;
+                    cursor: pointer;
+                    height: 54px;
+                    overflow:hidden;
+                    text-overflow:ellipsis;
+                    /*white-space:nowrap;*/
                   }
                   p{
                     font-size: 12px;
                     color: #d8d8d8;
                     position: absolute;
                     bottom: 22px;
+                    cursor: pointer;
+                    /*height: 80px;*/
+                    /*overflow:hidden;*/
+                    /*text-overflow:ellipsis;*/
+                    /*white-space:nowrap;*/
                     span{
                       img{
                         margin-right: 2px;
@@ -1365,9 +1610,169 @@
           }
           .main_container_right_slide2{
             height: 381px;
-            background: black;
+            background: white;
             margin-top: 24px;
             position: relative;
+            .main_container_right_slide2_top{
+              padding: 20px 20px 0 20px;
+              .title{
+                display: flex;
+                flex-direction: row;
+                .title_left{
+                  width: 120px;
+                  height: 36px;
+                  line-height: 36px;
+                  background: #4577A4;
+                  p{
+                    font-size:13px;
+                    font-family:NotoSansCJKkr-Bold;
+                    font-weight:bold;
+                    color:rgba(255,255,255,1);
+                    text-align: center;
+                  }
+                }
+                .title_right{
+                  width: 140px;
+                  border-bottom: 2px solid #d5d5d5;
+                }
+              }
+              .position{
+                h1{
+                  font-size:19px;
+                  font-family:NotoSansCJKkr-Black;
+                  font-weight:900;
+                  color:rgba(31,31,31,1);
+                  margin: 20px 0 12px 0;
+                }
+                p{
+                  font-size:13px;
+                  font-family:NotoSansCJKkr-DemiLight;
+                  font-weight:normal;
+                  color:rgba(31,31,31,1);
+                }
+              }
+            }
+            .main_container_right_slide2_center{
+              height: 30px;
+              border-top: 1px solid #d5d5d5;
+              border-bottom: 1px solid #d5d5d5;
+              margin-top: 29px;
+              .content{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                height: 30px;
+                line-height: 30px;
+                padding: 0 47px;
+
+                div{
+
+                  img{
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    top: 2px;
+                  }
+                }
+                p{
+                  font-size: 11px;
+                  color: #7B7B7B;
+                }
+                .content1{
+                  display: flex;
+                  flex-direction: row;
+                  height: 30px;
+                  div{
+                    height: 18px;
+                    width: 18px;
+                  }
+                }
+                .content2{
+                  display: flex;
+                  flex-direction: row;
+                  div{
+                    height: 18px;
+                    width: 18px;
+                  }
+                }
+                .content3{
+                  display: flex;
+                  flex-direction: row;
+                  div{
+                    height: 18px;
+                    width: 18px;
+                  }
+                }
+              }
+            }
+            .main_container_right_slide2_bottom{
+              .d1{
+                display: flex;
+                flex-direction: row;
+                padding: 20px 40px 20px 20px;
+                justify-content: space-between;
+                .d1_left{
+                  div{
+                    width: 80px;
+                    height: 80px;
+                    img{
+                      width: 100%;
+                      height: 100%;
+                    }
+                  }
+                }
+                .d1_center{
+                  font-size:30px;
+                  font-family:NotoSansCJKkr-DemiLight;
+                  font-weight:normal;
+                  color:#7B7B7B;
+                  display: flex;
+                  align-items: center;
+                }
+                .d1_right{
+                  span{
+                    font-size: 10px;
+                    color:#7B7B7B;
+                    margin-left: 3px;
+                    position: relative;
+                    top: 3px;
+                  }
+                  .right_top{
+                    display:flex;
+                    flex-direction: row;
+                  }
+                  .right_bottom{
+                    display:flex;
+                    flex-direction: row;
+                    margin-top: 40px;
+                  }
+                }
+              }
+              .d2{
+                height: 50px;
+                background: #F2F3F9;
+                margin-top: 20px;
+                padding-top: 10px;
+                ul{
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between;
+                  padding: 0 20px;
+                  li{
+                    text-align: center;
+                    h1{
+                      font-size: 14px;
+                      color:#7B7B7B;
+                    }
+                    p{
+                      font-size: 12px;
+                      color:#7B7B7B;
+                    }
+                  }
+                }
+              }
+            }
           }
           .main_container_right_slide3{
             height: 287px;
@@ -1456,7 +1861,7 @@
         margin-top: 23px;
         .news1{
           width: 690px;
-          height: 1085px;
+          /*height: 1085px;*/
           background: white;
           padding: 21px;
           position: relative;
@@ -1558,19 +1963,19 @@
               }
             }
             .more{
-              width:330px;
-              height:32px;
-              background:rgba(0,0,0,1);
-              position: absolute;
-              bottom: 20px;
-              left: 180px;
+              margin-top: 30px;
+              display: flex;
+              justify-content: center;
               cursor: pointer;
               p{
+                width:330px;
+                height:32px;
                 font-size:12px;
                 line-height: 32px;
                 font-family:NotoSansCJKkr-Bold;
                 color:rgba(255,255,255,1);
                 text-align: center;
+                background:rgba(0,0,0,1);
               }
             }
           }
@@ -1582,7 +1987,7 @@
       }
       .main_container2{
         .news{
-          height: 890px;
+          /*height: 890px;*/
           margin-top: 23px;
           padding: 0 21px;
           background: white;
@@ -1603,11 +2008,12 @@
               display: flex;
               flex-direction: row;
               flex-wrap: wrap;
-              justify-content: space-between;
+              /*justify-content: space-between;*/
               li{
                 width: 325px;
                 height: 386px;
                 background: white;
+                margin-right: 19px;
                 .li_top{
                   width: 325px;
                   height: 216px;
@@ -1644,87 +2050,19 @@
                   }
                 }
               }
+              li:nth-child(4n){
+                margin-right: 0;
+              }
             }
           }
           .pagination{
             display: flex;
             justify-content: center;
+            padding-bottom: 20px;
           }
         }
       }
     }
-    .footer_add{
-      margin-top: 60px;
-      height: 456px;
-      background: black;
-      padding-top: 48px;
-      .footer_add_container{
-        width: 1400px;
-        height: 100%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        .footer_add_item{
-          width: 320px;
-            .footer_add_title{
-              height: 35px;
-              line-height: 35px;
-              p{
-                font-size:12px;
-                font-family:NotoSansCJKkr-Bold;
-                color:rgba(255,255,255,1);
-                border-bottom: 2px solid #313131;
-              }
-            }
-            .footer_add_content{
-              ul{
-                li:last-of-type{
-                  border-bottom: none;
-                }
-                li{
-                  height: 113px;
-                  display: flex;
-                  flex-direction: row;
-                  padding-top: 20px;
-                  border-bottom: 1px solid #212121;
-                  .li_left{
-                    width: 109px;
-                    height: 72px;
-                    img{
-                      width: 100%;
-                      height: 100%;
-                    }
-                  }
-                  .li_right{
-                    width: 216px;
-                    padding-left: 10px;
-                    h1{
-                      font-size:11px;
-                      font-family:NotoSansCJKkr-Medium;
-                      color:rgba(245,245,245,1);
-                      line-height:18px;
-                    }
-                    p{
-                      font-size: 12px;
-                      color: #d8d8d8;
-                      /*position: absolute;*/
-                      /*bottom: 22px;*/
-                      height: 34px;
-                      margin-top: 10px;
-                      span{
-                        img{
-                          margin-right: 2px;
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
     }
   /* Icons */
 
@@ -2127,5 +2465,24 @@
     background-color: #409EFF!important;
     color: #fff;
   }
+  .active1{
+    color: dodgerblue!important;
+  }
+  .clicked{
+    background-image: url("../../static/images/left_light.png") !important;
+  }
+  .black{
+    position: relative;
+  }
+  .black:hover div{
 
+    background: rgba(0,0,0,0.5);
+  }
+  .navBarWrap {
+    position:fixed;
+    bottom:20px;
+    left: 1233px;
+    z-index:99;
+  }
 </style>
+

@@ -1,52 +1,56 @@
 <template>
-  <section class="container">
-    <div class="container_box">
-      <div class="container_box_window">
-        <div class="container_box_window_line"></div>
-        <div class="container_box_window_content">
-          <div class="container_box_window_content_top">
-            <h1>手机验证码登录</h1>
-            <span>立即注册</span>
-          </div>
-          <div class="container_box_window_content_center">
-            <div class="container_box_window_content_center_top">
-              <div class="container_box_window_content_center_top_left">
-                <el-dropdown trigger="click">
+  <div>
+    <div class="tab"></div>
+    <section class="container">
+      <div class="container_box">
+        <div class="container_box_window">
+          <div class="container_box_window_line"></div>
+          <div class="container_box_window_content">
+            <div class="container_box_window_content_top">
+              <h1>手机验证码登录</h1>
+              <span>立即注册</span>
+            </div>
+            <div class="container_box_window_content_center">
+              <div class="container_box_window_content_center_top">
+                <div class="container_box_window_content_center_top_left">
+                  <el-dropdown trigger="click">
       <span class="el-dropdown-link">
         + 86<i class="el-icon-arrow-down el-icon--right"></i>
       </span>
-                  <el-dropdown-menu slot="dropdown">
-                    <el-dropdown-item>+ 86</el-dropdown-item>
-                  </el-dropdown-menu>
-                </el-dropdown>
+                    <el-dropdown-menu slot="dropdown">
+                      <el-dropdown-item>+ 86</el-dropdown-item>
+                    </el-dropdown-menu>
+                  </el-dropdown>
+                </div>
+                <div class="container_box_window_content_center_top_right">
+                  <input type="text" placeholder="请输入手机号码">
+                </div>
               </div>
-              <div class="container_box_window_content_center_top_right">
-                <input type="text" placeholder="请输入手机号码">
-              </div>
-            </div>
-            <div class="container_box_window_content_center_bottom">
-              <div class="container_box_window_content_center_bottom_left">
-                <input type="password" style="" placeholder="请输入验证码">
+              <div class="container_box_window_content_center_bottom">
+                <div class="container_box_window_content_center_bottom_left">
+                  <input type="password" style="" placeholder="请输入验证码">
 
-              </div>
-              <div class="container_box_window_content_center_bottom_right">
-                <p>获取验证码</p>
+                </div>
+                <div class="container_box_window_content_center_bottom_right">
+                  <p>获取验证码</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="container_box_window_content_center_submit">
-            <p>登录</p>
-          </div>
-          <div class="container_box_window_content_bottom">
-            <router-link to="/login">
-              <span>账号密码登录</span>
-            </router-link>
-            <span>忘记密码</span>
+            <div class="container_box_window_content_center_submit">
+              <p>登录</p>
+            </div>
+            <div class="container_box_window_content_bottom">
+              <router-link to="/login">
+                <span>账号密码登录</span>
+              </router-link>
+              <span>忘记密码</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
+
 </template>
 
 <script>
@@ -56,6 +60,10 @@
 </script>
 
 <style scoped lang="less">
+  .tab{
+    height: 30px;
+    background: #3677A8;
+  }
   input::-webkit-input-placeholder {
     color: rgba(102, 102, 102, 1);
     /*text-align: center;*/

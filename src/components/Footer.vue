@@ -1,24 +1,24 @@
 <template>
-  <footer>
+  <footer class="animated fadeIn delay-1s">
     <section>
       <div class="container">
         <div class="footer_top">
           <div class="footer_top_logo"></div>
           <div class="footer_top_content">
-            <p>뉴스 | 인사이트 | 컨퍼런스 | 시세 | 동영상 | 고급정보 | 블록체인101 | 체인 | 포럼 | 이벤트</p>
-            <p>기사제보 | 광고문의</p>
-            <p>Copyright ⓒ ChainNews. All Rights Reserved.</p>
-            <p> 법인명 : (주)크립터스   |   주소 : 서울특별시 강남구 삼성동 141-35 남경빌딩 12층</p>
-            <p>인터넷신문등록번호 : 서울 아 04906   |   등록일자 : 2018.08.31   |   발행인 · 편집인 : 김지혁   |   개인정보 책임자 : 권준섭</p>
-            <p>chainnews.kr의 모든 컨텐츠와 기사는 저작권법의 보호를 받은바, 무단 전재, 복사, 배포 등을 금합니다.</p>
-            <p>대표전화 : 02-557-0501 / 광고문의 : 02-557-0501 / info@chainnews.kr</p>
+            <p>{{$t('m.f1')}}</p>
+            <p>{{$t('m.f2')}}</p>
+            <p>{{$t('m.f3')}}</p>
+            <p> {{$t('m.f4')}}</p>
+            <p>{{$t('m.f5')}}</p>
+            <p>{{$t('m.f6')}}</p>
+            <p>{{$t('m.f7')}}</p>
           </div>
           <div class="footer_top_window">
             <div class="footer_top_window_left">
               <input type="text" placeholder="Email">
             </div>
             <div class="footer_top_window_right">
-              <span>구독하기</span>
+              <span>{{$t('m.subscribe')}}</span>
             </div>
           </div>
           <div class="footer_top_icon">
@@ -62,7 +62,7 @@
             margin: 0 auto;
           }
           .footer_top_content{
-            width:591px;
+            width:800px;
             height:136px;
             font-size:13px;
             font-family:NotoSansCJKkr-Regular;
